@@ -20,11 +20,11 @@ mixin nav(parentClass, navArr)
 //- Sprites
 mixin icon(name)
 	svg
-		use(href= currentStatusDir + "/assets/svg/sprite.svg#" + name)
+		use(href= currentStatusDir + "./assets/svg/sprite.svg#" + name)
 		
 mixin icon-class(name, className)
 	svg(class= className)
-		use(href= currentStatusDir + "/assets/svg/sprite.svg#" + name)
+		use(href= currentStatusDir + "./assets/svg/sprite.svg#" + name)
 //- End sprites
 
 //- Checkbox
