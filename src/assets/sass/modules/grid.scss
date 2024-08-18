@@ -1,0 +1,63 @@
+.grid {
+    display: grid;
+}
+
+.grid--col {
+    &_2-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.grid--gap {
+    &_16-24 {
+        grid-gap: 4.44vw;
+    }
+}
+
+@include media-M {
+    .grid--col {
+        &_2-4 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .grid--gap {
+        &_16-24 {
+            grid-gap: 2.5vw;
+        }
+    }
+}
+// End M
+
+@include media-L {
+    .grid--col {
+        &_2-4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .grid--gap {
+        &_16-24 {
+            grid-gap: 1.67vw;
+        }
+    }
+}
+// End L
+
+@include media-XL {
+    .grid--gap {
+        &_16-24 {
+            grid-gap: 1.67vw;
+        }
+    }
+}
+// End XL
+
+@include media-XXL {
+    .grid--gap {
+        &_16-24 {
+            grid-gap: 1.25vw;
+        }
+    }
+}
+// End XXL

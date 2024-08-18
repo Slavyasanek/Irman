@@ -1,0 +1,261 @@
+.footer {
+    background: #F2F2F2;
+    color: var(--color_black);
+    font-size: 3.6vw;
+    line-height: 1.5;
+    padding-block: 6.67vw;
+
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 9.44vw;
+    }
+
+    &__subtitle {
+        font-size: 3.9vw;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 1.5;
+        margin: 0 0 5.56vw;
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5.56vw;
+        }
+
+        a {
+            color: var(--color_black);
+
+            &:hover, &:focus {
+                color: var(--color_accent);
+            }
+        }
+    }
+
+    &__block {
+        width: 48%;
+        margin-inline: auto;
+    }
+
+    &__time {
+        margin: 0;
+    }
+
+    &__tel {
+        display: block;
+        margin: 2.22vw 0 0;
+        color: var(--color_black);
+
+        &:hover, &:focus {
+            color: var(--color_accent);
+        }
+    }
+
+    &__socials {
+        display: flex;
+        flex-direction: row;
+        gap: 5.56vw;
+        margin-top: 4.44vw;
+    }
+
+    &__social {
+
+        svg {
+            @include square(8.9vw);
+            fill: var(--color_black);
+        }
+
+        &:hover, &:focus {
+            svg {
+                fill: var(--color_accent);
+            }
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+        margin-top: 6.67vw;
+    }
+
+}
+// End inner
+
+@include media-M {
+    .footer {
+        font-size: 2vw;
+        padding-block: 3.75vw;
+
+        &__container {
+            flex-direction: row;
+            gap: 5.3vw;
+        }
+    
+        &__subtitle {
+            font-size: 2.2vw;
+            margin-bottom: 3.12vw;
+        }
+
+        &__block {
+            width: auto;
+        }
+    
+        &__menu {
+            ul {
+                gap: 3.12vw;
+            }
+        }
+    
+        &__tel {
+            margin-top: 1.25vw;
+        }
+    
+        &__socials {
+            gap: 3.12vw;
+            margin-top: 2.5vw;
+        }
+    
+        &__social {
+            svg {
+                @include square(5vw);
+            }
+        }
+    
+        &__copyright {
+            margin-top: 3.75vw;
+        }
+    
+    }
+    // End inner    
+}
+// End M
+
+@include media-L {
+    .footer {
+        padding-block: 3.12vw;
+        font-size: 1.46vw;
+
+        &__container {
+            gap: 22.6vw;
+            justify-content: center;
+        }
+
+        &__block {
+            width: auto;
+            min-width: 11.6vw;
+            margin: 0;
+        }
+    
+        &__subtitle {
+            font-size: 1.67vw;
+            margin-bottom: 1.25vw;
+        }
+    
+        &__menu {
+            ul {
+                gap: .42vw;
+            }
+        }
+    
+        &__tel {
+            margin-top: 0.83vw;
+        }
+    
+        &__socials {
+            margin-top: 0.83vw;
+            gap: .83vw;
+        }
+    
+        &__social svg {
+            @include square(2.5vw);
+        }
+    
+        &__copyright {
+            margin-top: 3.33vw;
+        }
+    
+    }
+    // End inner    
+}
+// End L
+
+@include media-XL {
+    .footer {
+        padding-block: 2.1vw;
+        font-size: .97vw;
+
+        &__subtitle {
+            font-size: 1.11vw;
+            margin-bottom: 0.83vw;
+        }
+    
+        &__menu {
+            ul {
+                gap: .28vw;
+            }
+        }
+    
+        &__tel {
+            margin-top: 0.56vw;
+        }
+    
+        &__socials {
+            gap: .56vw;
+            margin-top: 0.56vw;
+        }
+    
+        &__social svg {
+            @include square(1.67vw);
+        }
+    
+        &__copyright {
+            margin-top: 2.22vw;
+        }
+    
+    }
+    // End inner    
+}
+// End XL
+
+@include media-XXL {
+    .footer {
+        padding-block: 1.56vw;
+        // font-size: .73vw;
+        font-size: .87vw;
+
+        &__subtitle {
+            // font-size: .83vw;
+            font-size: .9vw;
+            margin-bottom: 0.62vw;
+        }
+    
+        &__menu {
+            ul {
+                gap: .21vw;
+            }
+        }
+    
+        &__tel {
+            margin-top: 0.42vw;
+        }
+    
+        &__socials {
+            margin-top: 0.42vw;
+            gap: .42vw;
+        }
+    
+        &__social svg {
+            @include square(1.25vw);
+        }
+    
+        &__copyright {
+            margin-top: 1.67vw;
+        }
+    
+    }
+    // End inner    
+}
+// End XXL

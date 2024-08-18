@@ -1,0 +1,80 @@
+.catalogue {
+    padding-block: 11.11vw;
+
+    &__tabs {
+
+    }
+
+    &__load-more {
+        font-size: 3.9vw;
+        line-height: 1.2;
+        margin: 8.47vw auto 0;
+    }
+}
+// End inner
+
+@include media-M {
+    .catalogue {
+        padding-block: 6.25vw;
+        &__tabs {
+        
+        }
+
+        &__load-more {
+            margin-top: 4.77vw;
+            font-size: 2.2vw;
+        }
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .catalogue {
+        padding-block: 4.17vw;
+        &__tabs {
+        
+        }
+
+        &__load-more {
+            font-size: 1.2vw;
+            margin-top: 3.33vw;
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .catalogue {
+        padding-block: 6.9vw 3.47vw;
+
+        &__tabs {
+        
+        }
+
+        &__load-more {
+            font-size: .97vw;
+            margin-top: 2.22vw;
+        }
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .catalogue {
+        padding-block: 5.2vw 2.6vw;
+
+        &__tabs {
+        
+        }
+
+        &__load-more {
+            font-size: .73vw;
+            margin-top: 1.67vw;
+        }
+    }
+    // End inner
+}
+// End XXL

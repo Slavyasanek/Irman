@@ -1,0 +1,44 @@
+.section-title {
+    font-family: var(--font__title);
+    font-size: 6.67vw;
+    line-height: 1.6;
+    font-weight:400;
+
+    strong, b {
+        font-weight: 400;
+        color: var(--color_accent);
+    }
+}
+// End inner
+
+@include media-M {
+    .section-title {
+        font-size: 3.75vw;
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .section-title {
+        font-size: 2.5vw;
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .section-title {
+        font-size: 1.67vw;
+    }
+    // End inner
+}
+// End XL
+
+// @include media-XXL {
+//     .section-title {
+//         font-size: 1.25vw;
+//     }
+//     // End inner
+// }
+// // End XXL

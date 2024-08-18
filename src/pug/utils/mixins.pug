@@ -1,0 +1,56 @@
+- var currentStatusDir = ''
+
+//- HEADER---------
+mixin logo(parentClass)
+	a(href="/" class=parentClass + " logo")
+		picture
+			img.logo__img(src="/assets/images/header-logo/header-logo.png" alt="logo alt")
+//- End logo
+
+mixin nav(parentClass, navArr)
+	nav(class=parentClass + ' nav')
+		ul.nav__list
+			each navItem in navArr
+				li.nav__item
+					a.nav__link(href= navItem.link)= navItem.name
+			//- End loop
+//- End nav
+//- END HEADER------
+
+//- Sprites
+mixin icon(name)
+	svg
+		use(href= currentStatusDir + "/assets/svg/sprite.svg#" + name)
+		
+mixin icon-class(name, className)
+	svg(class= className)
+		use(href= currentStatusDir + "/assets/svg/sprite.svg#" + name)
+//- End sprites
+
+//- Checkbox
+mixin customCheck-label(size, parentClass, id, name, label)
+	div(class=parentClass +" custom-check custom-check--with-label custom-check--" + size + "")
+		.custom-check__field-wr
+			input.custom-check__field(id= id, type="checkbox", name= name)
+			.custom-check__customize
+				//- include ../../assets/svg/check.svg
+		//- End field
+		if label !== false
+			label.custom-check__label(for= id)= label
+	//- End check item
+
+//- Responsive image
+mixin responsiveImage(parentClass, imgPath, imgType)
+	picture
+		source(class= parentClass, media="(min-width:960px)", srcset= imgPath + ".webp")
+		source(class= parentClass, media="(min-width:960px)", srcset= imgPath + "." + imgType)
+		source(class= parentClass, srcset= imgPath + "-mobile.webp")
+		img(class= parentClass, srcset= imgPath + "-mobile." + imgType, alt="alt")
+
+mixin responsiveImage--oneSize(parentClass, imgPath, imgType)
+	picture
+		source(srcset= imgPath + ".webp")
+		img(class= parentClass, src= imgPath + "." + imgType, alt="alt")
+//- End Responsive image
+
+include ../modules/product-card

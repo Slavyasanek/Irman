@@ -1,0 +1,174 @@
+.header {
+    background-color: #F2F2F2;
+    padding-block: 5vw;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        display: none;
+    }
+
+    &__logo {
+        width: 18.9vw;
+        height: 8.9vw;
+        flex-shrink: 0;
+        img {
+            @include contain-image;
+        }
+    }
+
+    &__order-btn {
+        display: none;
+    }
+
+    &__cart-btn {
+        @include square(8.9vw);
+
+        svg {
+            @include square(100%);
+        }
+    }
+}
+// End inner
+
+@include media-M {
+    .header {
+        padding-block: 2.8vw;
+
+        &__logo {
+            width: 10.6vw;
+            height: 5vw;
+        }
+    
+        &__cart-btn {
+            @include square(5vw);
+        }
+    }
+    // End inner    
+}
+// End M
+
+@include media-L {
+    .header {
+        padding-block: 2.5vw;
+
+        &__menu {
+            display: block;
+            font-size: 1.88vw;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 4.4vw;
+            }
+
+            a {
+                color: inherit;
+                line-height: 1.2;
+            }
+        }
+    
+        &__logo {
+            width: 12.3vw;
+            height: 5.6vw;
+        }
+
+        &__right-side {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 2vw;
+        }
+
+        &__right-side, &__left-side {
+            flex-basis: 40%;
+        }
+    
+        &__order-btn {
+            display: block;
+            line-height: 1.2;
+            font-size: 1.67vw;
+            padding: 1.25vw 2vw;
+        }
+    
+        &__cart-btn {
+            @include square(3.33vw);
+        }
+    }
+    // End inner    
+}
+// End L
+
+@include media-XL {
+    .header {
+        padding-block: 1.67vw;
+    
+        &__menu {
+            font-size: 1.25vw;
+
+            ul {
+                gap: 2.9vw;
+            }
+        }
+    
+        &__logo {
+            width: 8.2vw;
+            height: 3.75vw;
+        }
+
+        &__right-side {
+            gap: 4.17vw;
+        }
+    
+        &__order-btn {
+            font-size: 1.11vw;
+            padding: .8vw 2.9vw;
+        }
+    
+        &__cart-btn {
+            @include square(2.22vw);
+        }
+    }
+    // End inner    
+}
+// End XL
+
+@include media-XXL {
+    .header {
+        padding-block: 1.25vw;
+    
+        &__menu {
+            font-size: .94vw;
+
+            ul {
+                gap: 2.2vw;
+            }
+        }
+
+        &__right-side {
+            gap: 3.12vw;
+        }
+    
+        &__logo {
+            width: 6.15vw;
+            height: 2.8vw;
+        }
+    
+        &__order-btn {
+            font-size: .83vw;
+            padding: .62vw 2.2vw;
+        }
+    
+        &__cart-btn {
+            @include square(1.67vw);
+        }
+    }
+    // End inner    
+}
+// End XXL

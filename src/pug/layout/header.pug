@@ -1,0 +1,28 @@
+header.header   
+    .container.header__container 
+        .header__left-side
+            button.btn.hamburger.header__hamburger
+                .hamburger__wrapper
+                    .hamburger__line 
+                    .hamburger__line 
+                    .hamburger__line 
+            .header__menu 
+                ul 
+                    li 
+                        a(href="/") Про нас
+                    li 
+                        a(href="/") Каталог
+        //- header__left-side
+        a(href="/").header__logo
+            picture 
+                img(src="/assets/images/logo.png", alt="")
+        //- .header__logo
+        .header__right-side
+            button.btn.btn--border_accent.header__order-btn 
+                .btn__content Індивідуальне замовлення
+            button.btn.btn--icon.header__cart-btn 
+                +icon('basket')
+        //- header__rigth-menu 
+    //- header__container 
+//- header
+

@@ -1,0 +1,56 @@
+@import "./mixins";
+@import "./fonts";
+
+@import "./vars.scss";
+
+
+// General
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font__general);
+}
+
+body {
+    background-color: var(--color_white);
+    color: var(--color_black);
+}
+
+main {
+    max-width: 100vw;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition);
+    
+    &::before, &::after {
+        transition: var(--transition);
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 400;
+}
+
+button {
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

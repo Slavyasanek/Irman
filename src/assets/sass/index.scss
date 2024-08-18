@@ -1,0 +1,20 @@
+@import "utils/main";
+
+// MODULES
+@import "./modules/btns.scss";
+@import "./modules/container.scss";
+@import "./modules/hamburger.scss";
+@import "./modules/picture.scss";
+@import "./modules/grid.scss";
+@import "./modules/section-title.scss";
+@import "./modules/product-card.scss";
+
+// LAYOUT
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+// SECTIONS
+@import "./sections/hero.scss";
+@import "./sections/catalogue.scss";
+@import "./sections/about.scss";
+@import "./sections/three-col.scss";

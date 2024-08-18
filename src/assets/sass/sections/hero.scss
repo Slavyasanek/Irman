@@ -1,0 +1,246 @@
+.hero {
+    position: relative;
+    height: calc(100vh - 18.9vw);
+    min-height: 150vw;
+
+    &__container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__content-block {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        color: var(--color_white);
+        font-weight: 400;
+        font-family: var(--font__title);
+        line-height: 0.8;
+        font-size: 11.11vw;
+
+        strong, b {
+            font-weight: 400;
+            color: var(--color_accent);
+        }
+    }
+
+    &__subtitle {
+        color: var(--color_white);
+        font-style: italic;
+        line-height: 1.5;
+        font-size: 4.4vw;
+        margin-top: 6.67vw;
+    }
+
+    &__link, &__btn {
+        font-weight: 500;
+        font-size: 5vw;
+        width: 100%;
+        padding: 3.6vw;
+    }
+
+    &__link {
+        margin-top: 10.9vw;
+    }
+
+    &__btn {
+        margin-top: 6.67vw;
+
+        .btn__content {
+            color: var(--color_white);
+        }
+    }
+
+    &__grid {
+        display: none;
+    }
+
+    &__bg {
+        position: absolute;
+        @include push-full;
+        border-radius: 0 0 2.4rem 2.4rem;
+        overflow: hidden;
+    }
+
+    &__overlay {
+        position: absolute;
+        @include push-full;
+        background: rgba(3, 3, 3, 0.75);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &__bg-img {
+        position: absolute;
+        @include push-full;
+
+        img {
+            @include cover-image;
+        }
+    }
+}
+// End inner
+
+@include media-M {
+    .hero {
+        height: calc(100vh - 10.6vw);
+        min-height: 100vw;
+
+        &__title {
+            font-size: 8vw;
+            text-align: center;
+        }
+    
+        &__subtitle {
+            margin-top: 3.75vw;
+            font-size: 2.5vw;
+            text-align: center;
+        }
+    
+        &__link {
+            margin-top: 5vw;
+        }
+
+        &__btn, &__link{
+            font-size: 2.8vw;
+            padding: 2vw;
+            width: 46.8vw;
+            margin-inline: auto;
+        }
+
+        &__btn {
+            margin-top: 3.75vw;
+        }
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .hero {
+        min-height: 50vw;
+        height: calc(100vh - 10.6vw);
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5vw;
+        }
+    
+        &__title {
+            color: var(--color_black);
+            font-size: 5vw;
+            line-height: 1;
+            text-align: start;
+        }
+    
+        &__subtitle {
+            color: var(--color_black);
+            margin-top: 3.33vw;
+            font-size: 1.8vw;
+            text-align: start;
+        }
+    
+        &__link {
+            width: max-content;
+            padding: 1.56vw 8vw;
+            margin-top: 5vw;
+            font-size: 1.88vw;
+            margin-inline: 0;
+        }
+
+        &__btn {
+            display: none;
+            pointer-events: none;
+        }
+    
+        &__grid {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border-radius: 0 3.2rem 0 3.2rem;
+            overflow: hidden;
+        }
+    
+        &__img {
+            position: relative;
+
+            picture {
+                position: absolute;
+                @include push-full;
+            }
+
+            img {
+                @include cover-image;
+            }
+        }
+    
+        &__bg {
+            display: none;
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .hero {
+        height: calc(100vh - 7vw);
+        min-height: 34.7vw;
+        min-height: 51.94vw;
+
+        &__container {
+            gap: 1.67vw;
+        }
+    
+        &__title {
+            font-size: 5.35vw;
+        }
+    
+        &__subtitle {
+            margin-top: 2.22vw;
+            font-size: 1.4vw;
+            max-width: 78%;
+        }
+    
+        &__link {
+            padding: 1vw 5.4vw;
+            margin-top: 3.33vw;
+            font-size: 1.25vw;
+        }
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .hero {
+        height: calc(100vh - 5.3vw);
+        min-height: 26vw;
+        min-height: 38.96vw;
+
+        &__container {
+            gap: 1.25vw;
+        }
+    
+        &__title {
+            font-size: 4.3vw;
+        }
+    
+        &__subtitle {
+            margin-top: 1.67vw;
+            font-size: 1vw;
+            max-width: 55%;
+        }
+    
+        &__link {
+            padding: .78vw 4vw;
+            margin-top: 2.5vw;
+            font-size: .94vw;
+        }
+    }
+    // End inner
+}
+// End XXL

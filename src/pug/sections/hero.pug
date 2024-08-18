@@ -1,0 +1,28 @@
+section.hero 
+    .container.hero__container 
+        .hero__content-block 
+            h1.hero__title Irman - декор 
+                br
+                strong ручної 
+                | роботи
+            //- hero__title
+
+            h2.hero__subtitle "Змініть свій простір за допомогою унікальних предметів декору ручної роботи"
+            a(href="/catalogue").btn.btn--full_accent.hero__link Каталог 
+            button.btn.btn--border_accent.hero__btn 
+                .btn__content Індивідуальне замовлення
+        //- hero__contentt-block 
+        .grid.hero__grid 
+            .hero__img
+            - for (var i = 1; i <= 7; i++)
+                .hero__img
+                    picture 
+                        img(src="/assets/images/pics/hero/"+i+".jpg", alt="im", loading="lazy")
+        .hero__bg
+            .hero__bg-img
+                picture 
+                    img(src="/assets/images/hero.jpg", alt="")
+            .hero__overlay
+        //- grid
+    //- container
+//- hero
