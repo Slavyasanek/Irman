@@ -40,10 +40,10 @@ article.product-page
                 .product-profile__block
                     h3.product-profile__subtitle Характеристики
                     ul.product-profile__char-list 
-                        - var chars = [{name: 'Розміри', value: '45 см х 35 см'},{name: 'Матеріал', value: 'високоякісна кераміка високоякісна кераміка'},{name: 'Вага', value: '2 кг'},{name: 'Колір', value: 'жовтий з білим візерунком'},{name: 'Техніка виготовлення', value: 'гончарство'},{name: 'Країна виробник', value: 'Україна'}]
+                        - var chars = [{name: 'Розміри', value: '45 см х 35 см'},{name: 'Матеріал', value: 'високоякісна кераміка'},{name: 'Вага', value: '2 кг'},{name: 'Колір', value: 'жовтий з білим візерунком'},{name: 'Техніка виготовлення', value: 'гончарство'},{name: 'Країна виробник', value: 'Україна'}]
                         for item in chars
                             li.product-profile__char 
-                                .profuct-profile__char-name= item.name
+                                .product-profile__char-name= item.name
                                 .profuct-profile__char-val= item.value
                     //- product-profile__char-list 
                 //- product-profile__block

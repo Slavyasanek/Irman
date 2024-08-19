@@ -56,7 +56,7 @@ class tabsSwitcher {
                 freeMode: true,
             })
         
-            const activeSelection = this.tabList.querySelector(this.tabActiveClass);
+            const activeSelection = this.tabList.querySelector(`.${this.tabActiveClass}`);
 
             this.setTogglerWidth(activeSelection);
             this.setTogglerLeft(activeSelection);
@@ -65,7 +65,7 @@ class tabsSwitcher {
 
                 if (e.target.closest(this.signleTabClass)) {
                     const target = e.target.closest(this.signleTabClass);
-                    const activeSelection = this.tabList.querySelector(this.tabActiveClass);
+                    const activeSelection = this.tabList.querySelector(`.${this.tabActiveClass}`);
 
                     if (target === activeSelection) return;
 
@@ -81,7 +81,7 @@ class tabsSwitcher {
 
 const tabs = Array.from(document.querySelectorAll('.tabs'));
 if (tabs.length > 0) {
-    tabs.forEach(tab => new tabsSwitcher(tab, '.tabs__list', '.tabs__toggler', '.tabs__item', '.active'));
+    tabs.forEach(tab => new tabsSwitcher(tab, '.tabs__list', '.tabs__toggler', '.tabs__item', 'active'));
 }
 // End TYPE TOGGLER
 

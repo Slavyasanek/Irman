@@ -3,7 +3,7 @@
     font-size: 3.9vw;
 
     &__status {
-        line-height: 1.2;
+        line-height: 1.21;
         color: var(--color_grey);
         margin: 0;
 
@@ -15,7 +15,7 @@
     &__price {
         margin-block: 4.44vw 6.67vw;
         font-weight: 500;
-        line-height: 1.4;
+        line-height: 1.2;
         font-size: 5.56vw;
     }
 
@@ -33,10 +33,6 @@
         gap: 6.67vw;
     }
 
-    &__block {
-        
-    }
-
     &__subtitle {
         font-style: italic;
         font-weight: 500;
@@ -50,23 +46,35 @@
         }
 
         ul {
-
+            padding-left: 5.56vw;
         }
-    }
 
-    &__char-list {
+        li {
+            position: relative;
 
+            &::before {
+                @include pseudo;
+                @include push--middle;
+                left: -2.8vw;
+                @include square(.56vw);
+                background-color: var(--color_black);
+                border-radius: 50%;
+            }
+        }
     }
 
     &__char {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 60% 35%;
+        align-items: center;
+        gap: 3.33vw;
+        
         &-name {
-
+            font-weight: 500;
         }
 
-        &-val {
-
+        &:not(:last-child) {
+            margin-bottom: 2.22vw;
         }
     }
 }
@@ -74,7 +82,8 @@
 
 @include media-M {
     .product-profile {
-    
+        font-size: 2.2vw;
+
         &__price {
             margin-block: 2.5vw 3.75vw;
             font-size: 3.12vw;
@@ -89,10 +98,7 @@
             margin-top: 5vw;
             gap: 3.75vw;
         }
-    
-        &__block {
-    
-        }
+
     
         &__subtitle {
             margin-bottom: 1.88vw;
@@ -100,27 +106,22 @@
         }
     
         &__descr {
-            p {
-    
-            }
     
             ul {
-    
+                padding-left: 3.12vw;
             }
-        }
-    
-        &__char-list {
-    
+
+            li::before {
+                left: -1.56vw;
+                @include square(.31vw);
+            }
         }
     
         &__char {
-    
-            &-name {
-    
-            }
-    
-            &-val {
-    
+            gap: 1.9vw;
+
+            &:not(:last-child) {
+                margin-bottom: 1.25vw;
             }
         }
     }
@@ -131,55 +132,50 @@
 
 @include media-L {
     .product-profile {
-    
+        font-size: 1.46vw;
+
         &__status {
-            &--pos {
-    
-            }
+            margin-top: 3.33vw;
         }
     
         &__price {
-    
+            font-size: 2.08vw;
+            margin-block: 4.17vw 2.5vw;
         }
     
         &__cart-btn {
-    
+            width: max-content;
+            padding: 1.25vw 6.5vw;
+            font-size: 1.9vw;
         }
     
         &__content {
-    
-        }
-    
-        &__block {
-    
+            margin-top: 7.2vw;
+            gap: 3.33vw;
         }
     
         &__subtitle {
-    
+            font-size: 1.67vw;
+            margin-bottom: 1.25vw;
         }
     
         &__descr {
-            p {
-    
-            }
-    
             ul {
-    
+                padding-left: 2.08vw;
             }
-        }
-    
-        &__char-list {
-    
+
+            li::before {
+                left: -1vw;
+                @include square(.21vw);
+            }
         }
     
         &__char {
-    
-            &-name {
-    
-            }
-    
-            &-val {
-    
+            grid-template-columns: 50% 50%;
+            gap: 1.25vw;
+
+            &:not(:last-child) {
+                margin-bottom: .83vw;
             }
         }
     }
@@ -189,55 +185,48 @@
 
 @include media-XL {
     .product-profile {
-    
+        font-size: .97vw;
+
         &__status {
-            &--pos {
-    
-            }
+            margin-top: 2.22vw;
         }
     
         &__price {
-    
+            font-size: 1.4vw;
+            margin-block: 2.8vw 1.67vw;
         }
     
         &__cart-btn {
-    
+            padding: .9vw 4.34vw;
+            font-size: 1.25vw;
         }
     
         &__content {
-    
-        }
-    
-        &__block {
-    
+            margin-top: 4.8vw;
+            gap: 2.22vw;
         }
     
         &__subtitle {
-    
+            font-size: 1.11vw;
+            margin-bottom: 0.83vw;
         }
     
         &__descr {
-            p {
-    
-            }
-    
             ul {
-    
+                padding-left: 1.4vw;
             }
-        }
-    
-        &__char-list {
-    
+
+            li::before {
+                left: -.7vw;
+                @include square(.14vw);
+            }
         }
     
         &__char {
-    
-            &-name {
-    
-            }
-    
-            &-val {
-    
+            gap: .83vw;
+
+            &:not(:last-child) {
+                margin-bottom: .56vw;
             }
         }
     }
@@ -247,55 +236,50 @@
 
 @include media-XXL {
     .product-profile {
-    
+        font-size: .8vw;
+
         &__status {
-            &--pos {
-    
-            }
+            margin-top: 1.67vw;
         }
     
         &__price {
-    
+            // font-size: 1vw;
+            font-size: 1.1vw;
+            margin-block: 2.08vw 1.25vw;
         }
     
         &__cart-btn {
-    
+            padding: .68vw 3.26vw;
+            font-size: .94vw;
         }
     
         &__content {
-    
-        }
-    
-        &__block {
-    
+            margin-top: 3.6vw;
+            gap: 1.67vw;
         }
     
         &__subtitle {
-    
+            // font-size: .83vw;
+            font-size: .9vw;
+            margin-bottom: 0.62vw;
         }
     
         &__descr {
-            p {
-    
-            }
-    
             ul {
-    
+                padding-left: 1vw;
+            }
+
+            li::before {
+                left: -.52vw;
+                @include square(.1vw);
             }
         }
-    
-        &__char-list {
-    
-        }
-    
+
         &__char {
-    
-            &-name {
-    
-            }
-    
-            &-val {
-    
+            gap: .83vw;
+
+            &:not(:last-child) {
+                margin-bottom: .42vw;
             }
         }
     }

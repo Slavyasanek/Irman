@@ -124,7 +124,8 @@
         }
     
         &__item {
-            font-size: .73vw;
+            // font-size: .73vw;
+            font-size: .8vw;
             &:not(:first-child) {
                 &::before {
                     left: -1.04vw;

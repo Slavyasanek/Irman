@@ -80,10 +80,6 @@
             max-width: 100%;
         }
     
-        &__img {
-    
-        }
-    
         &__thumbnails {
             display: block;
             pointer-events: all;
@@ -114,6 +110,12 @@
     .product-slider {
         &__thumbnails {
             margin-top: 1.67vw;
+        }
+
+        &__thumbnail {
+            &::after {
+                padding-top: 170%;
+            }
         }
     }
     // End inner
