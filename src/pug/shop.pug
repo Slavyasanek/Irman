@@ -1,0 +1,12 @@
+extends template/main
+
+block variables
+	- var title = 'Каталог'
+
+block content
+	.breadcrumbs.container 
+		.breadcrumbs__list 
+			li.breadcrumbs__item.breadcrumbs__item--link
+				a(href="/")  Головна
+			li.breadcrumbs__item Каталог
+	include ./sections/catalogue

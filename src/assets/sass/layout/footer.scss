@@ -62,20 +62,6 @@
         margin-top: 4.44vw;
     }
 
-    &__social {
-
-        svg {
-            @include square(8.9vw);
-            fill: var(--color_black);
-        }
-
-        &:hover, &:focus {
-            svg {
-                fill: var(--color_accent);
-            }
-        }
-    }
-
     &__copyright {
         text-align: center;
         margin-top: 6.67vw;
@@ -116,12 +102,6 @@
         &__socials {
             gap: 3.12vw;
             margin-top: 2.5vw;
-        }
-    
-        &__social {
-            svg {
-                @include square(5vw);
-            }
         }
     
         &__copyright {
@@ -168,11 +148,7 @@
             margin-top: 0.83vw;
             gap: .83vw;
         }
-    
-        &__social svg {
-            @include square(2.5vw);
-        }
-    
+
         &__copyright {
             margin-top: 3.33vw;
         }
@@ -205,10 +181,6 @@
         &__socials {
             gap: .56vw;
             margin-top: 0.56vw;
-        }
-    
-        &__social svg {
-            @include square(1.67vw);
         }
     
         &__copyright {
@@ -245,10 +217,6 @@
         &__socials {
             margin-top: 0.42vw;
             gap: .42vw;
-        }
-    
-        &__social svg {
-            @include square(1.25vw);
         }
     
         &__copyright {

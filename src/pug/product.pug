@@ -1,0 +1,15 @@
+extends template/main
+
+block variables
+	- var title = 'Ваза'
+
+block content 
+	.breadcrumbs.container 
+		.breadcrumbs__list 
+			li.breadcrumbs__item.breadcrumbs__item--link
+				a(href="/")  Головна
+			li.breadcrumbs__item.breadcrumbs__item--link 
+				a(href="/shop.html") Каталог
+			li.breadcrumbs__item Ваза
+	include ./sections/product-page
+	include ./sections/related

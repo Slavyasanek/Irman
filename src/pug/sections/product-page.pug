@@ -1,0 +1,80 @@
+article.product-page 
+    .container.product-page__container 
+        h1.product-page__title Ексклюзивна Керамічна Ваза Ручної Роботи
+        //- product-page__title
+        .product-slider.product-page__slider
+            .swiper.product-slider__main#productMainSlider 
+                .swiper-wrapper 
+                    - for (var i = 1; i <= 3; i++)
+                        .swiper-slide.product-slider__img.product-slider__main-slide 
+                            picture 
+                                img(src="./assets/images/product_"+i+".jpg", alt="product")
+                    - for (var i = 1; i <= 3; i++)
+                        .swiper-slide.product-slider__img.product-slider__main-slide 
+                            picture 
+                                img(src="./assets/images/product_"+i+".jpg", alt="product")
+                .swiper-pagination.product-slider__pagination
+                //- swiper-wrapper 
+            //- product-slider__main
+            .swiper.product-page__slider.product-slider__thumbnails#productThumbnails
+                .swiper-wrapper 
+                    - for (var i = 1; i <= 3; i++)
+                        .swiper-slide.product-slider__img.product-slider__thumbnail 
+                            picture 
+                                img(src="./assets/images/product_"+i+".jpg", alt="product")
+            //- product-slider__thumbnails
+        //- product-slider
+        .product-page__profile.product-profile 
+            p.product-profile__status.product-profile__status--pos В наявності
+            p.product-profile__price 1 700₴
+            button.btn.btn--full_accent.product-profile__cart-btn Купити
+
+            .product-profile__content
+                .product-profile__block
+                    h3.product-profile__subtitle Опис товару
+                    .product-profile__descr 
+                        p Наш ручний килим "Сонячний промінь" — це поєднання традиційних технік та сучасного дизайну. Виготовлений з високоякісних натуральних матеріалів, цей килим стане яскравим акцентом у вашому інтер'єрі, додавши затишку та тепла до вашого дому.
+                    //- roduct__profile__descr 
+                //- product-profile__block
+
+                .product-profile__block
+                    h3.product-profile__subtitle Характеристики
+                    ul.product-profile__char-list 
+                        - var chars = [{name: 'Розміри', value: '45 см х 35 см'},{name: 'Матеріал', value: 'високоякісна кераміка високоякісна кераміка'},{name: 'Вага', value: '2 кг'},{name: 'Колір', value: 'жовтий з білим візерунком'},{name: 'Техніка виготовлення', value: 'гончарство'},{name: 'Країна виробник', value: 'Україна'}]
+                        for item in chars
+                            li.product-profile__char 
+                                .profuct-profile__char-name= item.name
+                                .profuct-profile__char-val= item.value
+                    //- product-profile__char-list 
+                //- product-profile__block
+
+                .product-profile__block
+                    h3.product-profile__subtitle Переваги
+                    .product-profile__descr 
+                        p Кожна ваза є унікальною, з індивідуальними візерунками та колірними переходами.
+                        p Виготовлена з натуральних матеріалів.
+                        p Висока якість матеріалів і техніка виготовлення забезпечують тривале використання
+                    //- product__profile__descr 
+                //- product-profile__block
+
+                .product-profile__block
+                    h3.product-profile__subtitle Догляд
+                    .product-profile__descr 
+                        p Легко мити вручну з використанням м'якого миючого засобу. Не рекомендується застосування абразивних очищувачів або щіток.
+                    //- product__profile__descr 
+                //- product-profile__block
+
+                .product-profile__block
+                    h3.product-profile__subtitle Оплата, доставка та повернення
+                    .product-profile__descr 
+                        p Оплата готівкою, карткою Visa / Mastercard, безготівковий розрахунок
+                        p Способи доставки:
+                        ul 
+                            li у відділення Нової Пошти
+                            li кур'єром Нової Пошти
+                            li самовивіз за домовленістю
+
+                    //- product__profile__descr 
+                //- product-profile__block
+            //- product-profile__content
+    //- container

@@ -1,0 +1,52 @@
+.social-icon {
+    @include square(8.9vw);
+
+    &--fill {
+        fill: var(--color_black);
+
+        svg {
+            fill: var(--color_accent);
+        }
+    }
+
+    &--stroke {
+        stroke: var(--color_black);
+
+        svg {
+            stroke: var(--color_accent);
+        }
+    }
+}
+// End inner
+
+@include media-M {
+    .social-icon {
+        @include square(5vw);
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .social-icon {
+        @include square(2.5vw);
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .social-icon {
+        @include square(1.67vw);
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .social-icon {
+        @include square(1.25vw);
+    }
+    // End inner
+}
+// End XXL

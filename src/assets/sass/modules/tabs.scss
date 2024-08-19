@@ -1,6 +1,89 @@
 .tabs {
-    &__item {
+    width: 91.11vw;
+    overflow: visible;
 
+    &__item {
+        width: max-content;
+        font-size: 5.56vw;
+        line-height: 1.2;
+
+
+        &:not(:first-of-type) {
+            margin-left: 5.56vw;
+        }
+    }
+
+    &__toggler {
+        height: .1rem;
+        background-color: var(--color_black);
+        position: absolute;
+        bottom: 0;
+        transition: var(--transition);
     }
 }
 // End inner
+
+@include media-M {
+    .tabs {
+    
+        &__item {
+            font-size: 3.12vw;
+
+            &:not(:first-of-type) {
+                margin-left: 3.12vw;
+            }
+        }
+    }
+    // End inner
+}
+// End M 
+
+@include media-L {
+    .tabs {
+        width: 88.9vw;
+        
+        &__item {
+            font-size: 1.67vw;
+
+            &:not(:first-of-type) {
+                margin-left: 2.5vw;
+            }
+        }
+    
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .tabs {
+
+    
+        &__item {
+            font-size: 1.11vw;
+
+            &:not(:first-of-type) {
+                margin-left: 1.67vw;
+            }
+        }
+
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .tabs {
+
+        &__item {
+            font-size: .83vw;
+
+            &:not(:first-of-type) {
+                margin-left: 1.25vw;
+            }
+        }
+
+    }
+    // End inner
+}
+// End XXL

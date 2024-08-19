@@ -2,7 +2,7 @@
     padding-block: 11.11vw;
 
     &__tabs {
-
+        margin-bottom: 10.56vw;
     }
 
     &__load-more {
@@ -16,8 +16,9 @@
 @include media-M {
     .catalogue {
         padding-block: 6.25vw;
+
         &__tabs {
-        
+            margin-bottom: 5.9vvw;
         }
 
         &__load-more {
@@ -33,7 +34,7 @@
     .catalogue {
         padding-block: 4.17vw;
         &__tabs {
-        
+            margin-bottom: 2.7vw;
         }
 
         &__load-more {
@@ -50,7 +51,7 @@
         padding-block: 6.9vw 3.47vw;
 
         &__tabs {
-        
+            margin-bottom: 1.8vw;
         }
 
         &__load-more {
@@ -67,7 +68,7 @@
         padding-block: 5.2vw 2.6vw;
 
         &__tabs {
-        
+            margin-bottom: 1.35vw;
         }
 
         &__load-more {

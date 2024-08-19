@@ -1,0 +1,133 @@
+.product-slider {
+    overflow: hidden;
+
+    &__main {
+        max-width: 64.44vw;
+        overflow: visible;
+    }
+
+    &__img {
+        position: relative;
+        border-radius: 1.2rem;
+        overflow: hidden;
+        picture {
+            position: absolute;
+            @include push-full;
+        }
+
+        img {
+            @include cover-image;
+        }
+
+        &::after {
+            @include pseudo(block, relative);
+            width: 100%;
+            padding-top: 138%;
+            object-position: top;
+        }
+    }
+
+    &__thumbnails {
+        display: none;
+        pointer-events: none;
+    }
+
+    &__pagination {
+        position: static;
+        margin-top: 4.44vw;
+
+        .swiper-pagination-bullet {
+            background-color: #C6C6C6;
+            @include square(2.22vw);
+            transition: var(--transition);
+            opacity: 1;
+            border-radius: .4rem;
+            margin-inline: .56vw;
+
+            &-active {
+                background-color: var(--color_accent);
+                width: 5.56vw;
+            }
+        }
+    }
+}
+// End inner
+
+@include media-M {
+    .product-slider {
+        &__pagination {
+            margin-top: 2.5vw;
+
+            .swiper-pagination-bullet {
+                @include square(1.25vw);
+                margin-inline: .31vw;
+    
+                &-active {
+                    width: 3.12vw;
+                }
+            }
+        }
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .product-slider {
+
+
+        &__main {
+            max-width: 100%;
+        }
+    
+        &__img {
+    
+        }
+    
+        &__thumbnails {
+            display: block;
+            pointer-events: all;
+            margin-top: 2.5vw;
+        }
+    
+        &__thumbnail {
+            border-width: .15rem;
+            border-style: solid;
+            border-color: transparent;
+            cursor: pointer;
+
+            &.swiper-slide-thumb-active {
+                border-color: var(--color_accent);   
+            }
+        }
+    
+        &__pagination {
+            display: none;
+            pointer-events: none;
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .product-slider {
+        &__thumbnails {
+            margin-top: 1.67vw;
+        }
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .product-slider {
+    
+        &__thumbnails {
+            margin-top: 1.25vw;
+        }
+
+    }
+    // End inner
+}
+// End XXL

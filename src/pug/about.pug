@@ -1,0 +1,13 @@
+extends template/main
+
+block variables
+	- var title = 'Про нас'
+
+block content
+	.breadcrumbs.container 
+		.breadcrumbs__list 
+			li.breadcrumbs__item.breadcrumbs__item--link
+				a(href="/")  Головна
+			li.breadcrumbs__item Про нас
+	include ./sections/about
+	include ./sections/three-col

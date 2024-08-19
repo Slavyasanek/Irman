@@ -10,6 +10,18 @@
             padding-top: 134%;
             width: 100%;
         }
+
+        &:hover {
+            .product-card {
+                &__main-img {
+                    @include el-hide;
+                }
+
+                &__odd-img {
+                    @include el-show;
+                }
+            }
+        }
     }
 
     &__img {
@@ -17,10 +29,16 @@
         @include push-full;
         overflow: hidden;
         border-radius: .62rem;
+        transition: var(--transition);
 
         img {
             @include cover-image;
         }
+        
+    }
+
+    &__odd-img {
+        @include el-hide;
     }
 
     &__info {

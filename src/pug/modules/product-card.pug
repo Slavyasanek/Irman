@@ -1,19 +1,19 @@
 mixin product-card()
     .product-card 
-        a(href="/").product-card__img-wr 
+        a(href="/product.html").product-card__img-wr 
             .product-card__img.product-card__main-img 
                 picture 
                     img(src="./assets/images/pics/col/1.jpg", alt="", loading="lazy")
-            .product-card__img.product-card__odd-img 
+            .product-card__img.product-card__odd-img
                 picture 
                     img(src="./assets/images/pics/col/2.jpg", alt="", loading="lazy")
         //- product-card__img-wr 
         .product-card__info
             .product-card__heading 
-                a(href="/").product-card__title  Глиняна ваза. Колекція “Etna”
+                a(href="/product.html").product-card__title  Глиняна ваза. Колекція “Etna”
                 p.product-card__price 2000₴
             .product-card__status.product-card__status--pos В наявності
-            a(href="").btn.btn--icon.btn--border_accent.product-card__btn
+            a(href="/product.html").btn.btn--icon.btn--border_accent.product-card__btn
                 .btn__content
                     +icon('basket')
                     | Замовити 

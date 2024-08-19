@@ -1,12 +1,14 @@
-section.catalogue 
+section.catalogue
+    .catalogue__tabs 
+        .swiper.tabs
+            .swiper-wrapper.tabs__list
+                button.btn.tabs__item.swiper-slide.active(data-tab="all") Всі товари
+                button.btn.tabs__item.swiper-slide(data-tab="vases") Вази
+                button.btn.tabs__item.swiper-slide(data-tab="carpet") Килими
+                button.btn.tabs__item.swiper-slide(data-tab="collection") Колекції
+                .tabs__toggler
+        //- tabs 
     .container 
-        .catalogue__tabs.tabs 
-            button.btn.tab__item Всі товари
-            button.btn.tab__item Вази
-            button.btn.tab__item Килими
-            button.btn.tab__item Колекції
-        //- tabs
-
         .grid.grid--col_2-4.grid--gap_16-24.catalogue__products 
             - for (var i = 0; i < 8; i++)
                 +product-card()

@@ -7,7 +7,12 @@
 @import "./modules/picture.scss";
 @import "./modules/grid.scss";
 @import "./modules/section-title.scss";
+@import "./modules/social-icon.scss";
 @import "./modules/product-card.scss";
+@import "./modules/tabs.scss";
+@import "./modules/breadcrumbs.scss";
+@import "./modules/product-slider.scss";
+@import "./modules/product-profile.scss";
 
 // LAYOUT
 @import "./layout/header.scss";
@@ -18,3 +23,4 @@
 @import "./sections/catalogue.scss";
 @import "./sections/about.scss";
 @import "./sections/three-col.scss";
+@import "./sections/product-page.scss";
