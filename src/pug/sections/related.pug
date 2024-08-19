@@ -1,3 +1,8 @@
 .related 
     .container.related__container 
         h2.section-title.related__title Схожі товари
+        .swiper.related__swiper 
+            .swiper-wrapper 
+                - for (var i = 0; i < 4; i++)
+                    +product-card('swiper-slide')
+            .swiper-pagination.slider-pagination.related__pagination

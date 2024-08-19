@@ -44,6 +44,26 @@
         // @include media-L {
         //     border-radius: 2.4rem;
         // }
+        position: relative;
+        overflow: hidden;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 150%;
+            transition: all 0.75s cubic-bezier(0.01, 0.56, 1, 1);
+            width: 200%;
+            height: 100%;
+            transform: skew(-20deg);
+            background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+        }
+
+        &:hover, &:focus {
+            &::after {
+                left: -200%;
+            }
+        }
     }
 }
 // End FULL

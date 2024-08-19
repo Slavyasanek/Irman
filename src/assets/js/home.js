@@ -97,12 +97,31 @@ if (document.querySelector('.product-page')) {
         modules: [Pagination, Thumbs],
         spaceBetween: 24,
         pagination: {
-            el: '.swiper-pagination'
+            el: '.product-slider__pagination',
         },
         thumbs: {
             swiper: thumbnails
         }
     })
+}
 
-    
+
+if (document.querySelector('.related')) {
+    new Swiper('.related__swiper', {
+        slidesPerView: 2, 
+        spaceBetween: 16,
+        modules: [Pagination],
+        pagination: {
+            el: '.related__pagination',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 3,
+            },
+            960: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+            }
+        }
+    })
 }

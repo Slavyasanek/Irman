@@ -1,5 +1,5 @@
 .product-page {
-    padding-bottom: 22.22vw;
+    padding-bottom: 11.11vw;
 
     &__container {
         display: flex;
@@ -17,7 +17,7 @@
 
 @include media-M {
     .product-page {
-        padding-bottom: 12.5vw;
+        padding-bottom: 6.25vw;
 
         &__container {
             gap: 3.75vw;

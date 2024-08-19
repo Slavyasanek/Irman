@@ -1,0 +1,51 @@
+.related {
+    padding-block: 11.11vw 22.22vw;
+
+    &__title {
+        margin-bottom: 5.56vw;
+    }
+}
+// End inner
+
+@include media-M {
+    .related {
+        padding-block: 6.25vw 12.5vw;
+        &__title {
+            margin-bottom: 3.12vw;
+        }
+    }
+    // End inner    
+}
+// End M
+
+@include media-L {
+    .related {
+        padding-block: 4.17vw 8.33vw;
+
+        &__title {
+            margin-bottom: 2.08vw;
+        }
+    }
+    // End inner    
+}
+// End L
+
+@include media-XL {
+    .related {
+        padding-block: 2.8vw 5.56vw;
+
+        &__title {
+            margin-bottom: 1.4vw;
+        }
+    }
+    // End inner    
+}
+// End XL
+
+@include media-XXL {
+    .related {
+        padding-block: 2.08vw 4.17vw;
+    }
+    // End inner    
+}
+// End XXL
