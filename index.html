@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-EN">
+<html lang="ua">
   <head>
     <meta charset="utf-8">
     <title>Web site</title><!--[if IE]>
@@ -23,8 +23,8 @@
           </button>
           <div class="header__menu"> 
             <ul> 
-              <li> <a href="/">Про нас</a></li>
-              <li> <a href="/">Каталог</a></li>
+              <li> <a href="/about.html">Про нас</a></li>
+              <li> <a href="/shop.html">Каталог</a></li>
             </ul>
           </div>
         </div><a class="header__logo" href="/">
@@ -46,7 +46,7 @@
   <div class="container hero__container"> 
     <div class="hero__content-block"> 
       <h1 class="hero__title">Irman - декор <br><strong>ручної </strong>роботи</h1>
-      <h2 class="hero__subtitle">"Змініть свій простір за допомогою унікальних предметів декору ручної роботи"</h2><a class="btn btn--full_accent hero__link" href="/catalogue">Каталог </a>
+      <h2 class="hero__subtitle">"Змініть свій простір за допомогою унікальних предметів декору ручної роботи"</h2><a class="btn btn--full_accent hero__link" href="/shop.html">Каталог </a>
       <button class="btn btn--border_accent hero__btn"> 
         <div class="btn__content">Індивідуальне замовлення</div>
       </button>
@@ -83,27 +83,32 @@
     </div>
   </div>
 </section>
-      <section class="catalogue"> 
-        <div class="container"> 
-          <div class="catalogue__tabs tabs"> 
-            <button class="btn tab__item">Всі товари</button>
-            <button class="btn tab__item">Вази</button>
-            <button class="btn tab__item">Килими</button>
-            <button class="btn tab__item">Колекції</button>
+      <section class="catalogue">
+        <div class="catalogue__tabs"> 
+          <div class="swiper tabs">
+            <div class="swiper-wrapper tabs__list">
+              <button class="btn tabs__item swiper-slide active" data-tab="all">Всі товари</button>
+              <button class="btn tabs__item swiper-slide" data-tab="vases">Вази</button>
+              <button class="btn tabs__item swiper-slide" data-tab="carpet">Килими</button>
+              <button class="btn tabs__item swiper-slide" data-tab="collection">Колекції</button>
+              <div class="tabs__toggler"></div>
+            </div>
           </div>
+        </div>
+        <div class="container"> 
           <div class="grid grid--col_2-4 grid--gap_16-24 catalogue__products"> 
-            <div class="product-card"> <a class="product-card__img-wr" href="/"> 
+            <div class="product-card"><a class="product-card__img-wr" href="/product.html"> 
                 <div class="product-card__img product-card__main-img"> 
                   <picture> <img src="./assets/images/pics/col/1.jpg" alt="" loading="lazy"></picture>
                 </div>
-                <div class="product-card__img product-card__odd-img"> 
+                <div class="product-card__img product-card__odd-img">
                   <picture> <img src="./assets/images/pics/col/2.jpg" alt="" loading="lazy"></picture>
                 </div></a>
               <div class="product-card__info">
-                <div class="product-card__heading"> <a class="product-card__title" href="/"> Глиняна ваза. Колекція “Etna”</a>
+                <div class="product-card__heading"> <a class="product-card__title" href="/product.html"> Глиняна ваза. Колекція “Etna”</a>
                   <p class="product-card__price">2000₴</p>
                 </div>
-                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="">
+                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="/product.html">
                   <div class="btn__content">
                     <svg>
                       <use href="./assets/svg/sprite.svg#basket"></use>
@@ -111,18 +116,18 @@
                   </div></a>
               </div>
             </div>
-            <div class="product-card"> <a class="product-card__img-wr" href="/"> 
+            <div class="product-card"><a class="product-card__img-wr" href="/product.html"> 
                 <div class="product-card__img product-card__main-img"> 
                   <picture> <img src="./assets/images/pics/col/1.jpg" alt="" loading="lazy"></picture>
                 </div>
-                <div class="product-card__img product-card__odd-img"> 
+                <div class="product-card__img product-card__odd-img">
                   <picture> <img src="./assets/images/pics/col/2.jpg" alt="" loading="lazy"></picture>
                 </div></a>
               <div class="product-card__info">
-                <div class="product-card__heading"> <a class="product-card__title" href="/"> Глиняна ваза. Колекція “Etna”</a>
+                <div class="product-card__heading"> <a class="product-card__title" href="/product.html"> Глиняна ваза. Колекція “Etna”</a>
                   <p class="product-card__price">2000₴</p>
                 </div>
-                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="">
+                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="/product.html">
                   <div class="btn__content">
                     <svg>
                       <use href="./assets/svg/sprite.svg#basket"></use>
@@ -130,18 +135,18 @@
                   </div></a>
               </div>
             </div>
-            <div class="product-card"> <a class="product-card__img-wr" href="/"> 
+            <div class="product-card"><a class="product-card__img-wr" href="/product.html"> 
                 <div class="product-card__img product-card__main-img"> 
                   <picture> <img src="./assets/images/pics/col/1.jpg" alt="" loading="lazy"></picture>
                 </div>
-                <div class="product-card__img product-card__odd-img"> 
+                <div class="product-card__img product-card__odd-img">
                   <picture> <img src="./assets/images/pics/col/2.jpg" alt="" loading="lazy"></picture>
                 </div></a>
               <div class="product-card__info">
-                <div class="product-card__heading"> <a class="product-card__title" href="/"> Глиняна ваза. Колекція “Etna”</a>
+                <div class="product-card__heading"> <a class="product-card__title" href="/product.html"> Глиняна ваза. Колекція “Etna”</a>
                   <p class="product-card__price">2000₴</p>
                 </div>
-                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="">
+                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="/product.html">
                   <div class="btn__content">
                     <svg>
                       <use href="./assets/svg/sprite.svg#basket"></use>
@@ -149,18 +154,18 @@
                   </div></a>
               </div>
             </div>
-            <div class="product-card"> <a class="product-card__img-wr" href="/"> 
+            <div class="product-card"><a class="product-card__img-wr" href="/product.html"> 
                 <div class="product-card__img product-card__main-img"> 
                   <picture> <img src="./assets/images/pics/col/1.jpg" alt="" loading="lazy"></picture>
                 </div>
-                <div class="product-card__img product-card__odd-img"> 
+                <div class="product-card__img product-card__odd-img">
                   <picture> <img src="./assets/images/pics/col/2.jpg" alt="" loading="lazy"></picture>
                 </div></a>
               <div class="product-card__info">
-                <div class="product-card__heading"> <a class="product-card__title" href="/"> Глиняна ваза. Колекція “Etna”</a>
+                <div class="product-card__heading"> <a class="product-card__title" href="/product.html"> Глиняна ваза. Колекція “Etna”</a>
                   <p class="product-card__price">2000₴</p>
                 </div>
-                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="">
+                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="/product.html">
                   <div class="btn__content">
                     <svg>
                       <use href="./assets/svg/sprite.svg#basket"></use>
@@ -168,18 +173,18 @@
                   </div></a>
               </div>
             </div>
-            <div class="product-card"> <a class="product-card__img-wr" href="/"> 
+            <div class="product-card"><a class="product-card__img-wr" href="/product.html"> 
                 <div class="product-card__img product-card__main-img"> 
                   <picture> <img src="./assets/images/pics/col/1.jpg" alt="" loading="lazy"></picture>
                 </div>
-                <div class="product-card__img product-card__odd-img"> 
+                <div class="product-card__img product-card__odd-img">
                   <picture> <img src="./assets/images/pics/col/2.jpg" alt="" loading="lazy"></picture>
                 </div></a>
               <div class="product-card__info">
-                <div class="product-card__heading"> <a class="product-card__title" href="/"> Глиняна ваза. Колекція “Etna”</a>
+                <div class="product-card__heading"> <a class="product-card__title" href="/product.html"> Глиняна ваза. Колекція “Etna”</a>
                   <p class="product-card__price">2000₴</p>
                 </div>
-                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="">
+                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="/product.html">
                   <div class="btn__content">
                     <svg>
                       <use href="./assets/svg/sprite.svg#basket"></use>
@@ -187,18 +192,18 @@
                   </div></a>
               </div>
             </div>
-            <div class="product-card"> <a class="product-card__img-wr" href="/"> 
+            <div class="product-card"><a class="product-card__img-wr" href="/product.html"> 
                 <div class="product-card__img product-card__main-img"> 
                   <picture> <img src="./assets/images/pics/col/1.jpg" alt="" loading="lazy"></picture>
                 </div>
-                <div class="product-card__img product-card__odd-img"> 
+                <div class="product-card__img product-card__odd-img">
                   <picture> <img src="./assets/images/pics/col/2.jpg" alt="" loading="lazy"></picture>
                 </div></a>
               <div class="product-card__info">
-                <div class="product-card__heading"> <a class="product-card__title" href="/"> Глиняна ваза. Колекція “Etna”</a>
+                <div class="product-card__heading"> <a class="product-card__title" href="/product.html"> Глиняна ваза. Колекція “Etna”</a>
                   <p class="product-card__price">2000₴</p>
                 </div>
-                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="">
+                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="/product.html">
                   <div class="btn__content">
                     <svg>
                       <use href="./assets/svg/sprite.svg#basket"></use>
@@ -206,18 +211,18 @@
                   </div></a>
               </div>
             </div>
-            <div class="product-card"> <a class="product-card__img-wr" href="/"> 
+            <div class="product-card"><a class="product-card__img-wr" href="/product.html"> 
                 <div class="product-card__img product-card__main-img"> 
                   <picture> <img src="./assets/images/pics/col/1.jpg" alt="" loading="lazy"></picture>
                 </div>
-                <div class="product-card__img product-card__odd-img"> 
+                <div class="product-card__img product-card__odd-img">
                   <picture> <img src="./assets/images/pics/col/2.jpg" alt="" loading="lazy"></picture>
                 </div></a>
               <div class="product-card__info">
-                <div class="product-card__heading"> <a class="product-card__title" href="/"> Глиняна ваза. Колекція “Etna”</a>
+                <div class="product-card__heading"> <a class="product-card__title" href="/product.html"> Глиняна ваза. Колекція “Etna”</a>
                   <p class="product-card__price">2000₴</p>
                 </div>
-                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="">
+                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="/product.html">
                   <div class="btn__content">
                     <svg>
                       <use href="./assets/svg/sprite.svg#basket"></use>
@@ -225,18 +230,18 @@
                   </div></a>
               </div>
             </div>
-            <div class="product-card"> <a class="product-card__img-wr" href="/"> 
+            <div class="product-card"><a class="product-card__img-wr" href="/product.html"> 
                 <div class="product-card__img product-card__main-img"> 
                   <picture> <img src="./assets/images/pics/col/1.jpg" alt="" loading="lazy"></picture>
                 </div>
-                <div class="product-card__img product-card__odd-img"> 
+                <div class="product-card__img product-card__odd-img">
                   <picture> <img src="./assets/images/pics/col/2.jpg" alt="" loading="lazy"></picture>
                 </div></a>
               <div class="product-card__info">
-                <div class="product-card__heading"> <a class="product-card__title" href="/"> Глиняна ваза. Колекція “Etna”</a>
+                <div class="product-card__heading"> <a class="product-card__title" href="/product.html"> Глиняна ваза. Колекція “Etna”</a>
                   <p class="product-card__price">2000₴</p>
                 </div>
-                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="">
+                <div class="product-card__status product-card__status--pos">В наявності</div><a class="btn btn--icon btn--border_accent product-card__btn" href="/product.html">
                   <div class="btn__content">
                     <svg>
                       <use href="./assets/svg/sprite.svg#basket"></use>
@@ -311,10 +316,10 @@
           <p class="footer__subtitle">Контакти</p>
           <p class="footer__time">9:00-19:00 Пн-Нд</p><a class="footer__tel" href="tel:0942578644">0942578644</a>
           <div class="footer__socials"> <a class="btn btn--icon footer__social" href="http://" target="_blank" rel="noopener noreferrer"> 
-              <svg>
+              <svg class="social-icon social-icon--fill">
                 <use href="./assets/svg/sprite.svg#instagram"></use>
               </svg></a><a class="btn btn--icon footer__social" href="http://" target="_blank" rel="noopener noreferrer"> 
-              <svg>
+              <svg class="social-icon social-icon--stroke">
                 <use href="./assets/svg/sprite.svg#telegram"></use>
               </svg></a></div>
         </div>
