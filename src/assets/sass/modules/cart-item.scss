@@ -109,7 +109,7 @@
                 &_inline {
                     .cart-item {
                         &__price {
-                            order:1;
+                            order: 1;
                         }
                     }
                 }
@@ -133,10 +133,6 @@
         &__price {
             font-size: 2.08vw;
             margin-bottom: 0;
-        }
-    
-        &__quant-block {
-    
         }
     
         &__delete-btn {
@@ -164,16 +160,6 @@
     
         &__row {
             gap: .56vw;
-
-            &--dir {
-                &_inline {
-    
-                }
-    
-                &_column {
-    
-                }
-            }
         }
     
         &__title {
@@ -209,16 +195,6 @@
     
         &__row {
             gap: .42vw;
-
-            &--dir {
-                &_inline {
-    
-                }
-    
-                &_column {
-    
-                }
-            }
         }
     
         &__title {
