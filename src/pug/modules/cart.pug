@@ -1,0 +1,27 @@
+.backdrop.backdrop--cart
+    .backdrop__inner.cart 
+        .cart-heading.cart__heading 
+            button.btn.btn--icon.cart-heading__close-btn
+                +icon('close')
+            h5.section-title.cart-heading__title Кошик(1)
+        //- cart__heading
+        .cart-items
+            .cart-items__list
+                +cart-item('./assets/images/cart1.jpg', 'column', 'cart-items__item')
+                +cart-item('./assets/images/cart2.jpg', 'column', 'cart-items__item')
+                +cart-item('./assets/images/cart1.jpg', 'column', 'cart-items__item')
+                +cart-item('./assets/images/cart2.jpg', 'column', 'cart-items__item')
+            //- cart-items__list
+        //- cart-items
+        .cart__footer.cart-footer 
+            .cart-footer__total-price
+                .cart-footer__title Загальна сума
+                .cart-footer__val 3 800₴
+            //- cart-footer__total-price
+            .cart-footer__btns.cart-footer__btns--dir_col
+                a(href="/shop.html").btn.btn--border_accent.cart-footer__continue-btn       
+                    .btn__content Продовжити покупки
+                a(href="/checkout.html").btn.btn--full_accent.cart-footer__checkout-btn Оформити замовлення
+        //- cart-footer 
+    //- backdrop__inner cart
+//- backdrop

@@ -1,0 +1,77 @@
+.quant-block {
+    display: flex;
+    flex-direction: row;
+    gap: .56vw;
+
+    &__btn, &__value {
+        border-radius: .4rem;
+        border: .1rem solid var(--color_grey);   
+        @include square(8.9vw);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color_grey);
+        font-size: 5vw;
+        line-height: 1.22;
+    }
+
+    &__btn {
+        &:hover {
+            border-color: var(--color_accent);
+            color: var(--color_accent);
+        }
+    }
+}
+// End inner
+
+@include media-M {
+    .quant-block {
+        gap: .31vw;
+
+        &__btn, &__value {
+            @include square(5vw);
+            font-size:2.85vw;
+        }
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .quant-block {
+        gap: .21vw;
+        
+        &__btn, &__value {
+            @include square(3.33vw);
+            font-size: 1.88vw;
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .quant-block {
+        gap: .14vw;
+        
+        &__btn, &__value {
+            @include square(2.22vw);
+            font-size: 1.25vw;
+        }
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .quant-block {
+        gap: .1vw;
+        
+        &__btn, &__value {
+            @include square(1.67vw);
+            font-size: .94vw;
+        }
+    }
+    // End inner
+}
+// End XXL

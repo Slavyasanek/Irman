@@ -1,0 +1,88 @@
+.cart-heading {
+    padding-top: 14.44vw;
+    position: relative;
+
+    &__close-btn {
+        position: absolute;
+        top: 2.22vw;
+        right: 2.22vw;
+        @include square(8.9vw);
+
+        svg {
+            @include square(100%);
+        }
+    }
+
+    &__title {
+        margin-bottom: 6.67vw;
+    }
+}
+// End inner
+
+@include media-M {
+    .cart-heading {
+        padding-top: 8.12vw;
+
+        &__close-btn {
+            @include square(5vw);
+            top: 1.25vw;
+            right: 1.25vw;
+        }
+    
+        &__title {
+            margin-bottom: 3.75vw;
+        }
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .cart-heading {
+        padding-top: 4.8vw;
+
+        &__close-btn {
+            @include square(3.33vw);
+            top: 0;
+            right: 0;
+        }
+    
+        &__title {
+            margin-bottom: 1.56vw;
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .cart-heading {
+        padding-top: 3.2vw;
+
+        &__close-btn {
+            @include square(2.22vw);
+        }
+    
+        &__title {
+            margin-bottom: 1vw;
+        }
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .cart-heading {
+        padding-top: 2.4vw;
+
+        &__close-btn {
+            @include square(1.67vw);
+        }
+    
+        &__title {
+            margin-bottom: 0.8vw;
+        }
+    }
+    // End inner
+}
+// End XXL

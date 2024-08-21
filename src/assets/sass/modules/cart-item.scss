@@ -1,0 +1,238 @@
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    gap: 3.33vw;
+    padding-bottom: 8.6vw;
+
+    &__img {
+        border-radius: 1.2rem;
+        position: relative;
+        overflow: hidden;
+        width: 20.3vw;
+        height: 27.8vw;
+        flex-shrink: 0;
+
+        img {
+            @include cover-image;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 8.9vw;
+        flex-grow: 1;
+    }
+
+    &__title {
+        margin: 0 0 2.22vw;
+        font-weight: 500;
+        line-height: 1.5;
+        font-size: 3.9vw;
+    }
+
+    &__price {
+        line-height: 1.2;
+        margin: 0 0 6.67vw;
+        font-weight: 500;
+        font-size: 5.56vw;
+    }
+
+    &__delete-btn {
+        font-size: 3.33vw;
+        font-weight: 500;
+
+        &::after {
+            bottom: 0;
+        }
+    }
+}
+// End inner
+
+@include media-M {
+    .cart-item {
+        gap: 1.88vw;
+        padding-bottom: 5vw;
+
+        &__img {
+            width: 11.4vw;
+            height: 15.6vw;
+        }
+    
+        &__content {
+            gap: 5vw;
+        }
+    
+        &__title {
+            font-size: 2.2vw;
+            margin-bottom: 1.25vw;
+        }
+    
+        &__price {
+            font-size: 3.12vw;
+            margin-bottom: 3.75vw;
+        }
+    
+        &__delete-btn {
+            
+            font-size: 1.88vw;
+        }
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .cart-item {
+        gap: 2.5vw;
+        padding-bottom: 3.44vw;
+        padding-right: 11.56vw;
+
+        &__img {
+            width: 14.5vw;
+            height: 20vw;
+        }
+    
+        &__content {
+            gap: 3.44vw;
+        }
+    
+        &__row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: .83vw;
+            align-items: center;
+
+            &--dir {
+                &_inline {
+                    .cart-item {
+                        &__price {
+                            order:1;
+                        }
+                    }
+                }
+    
+                &_column {
+                    flex-wrap: wrap;
+                    .cart-item {
+                        &__title {
+                            flex-basis: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    
+        &__title {
+            margin-bottom: 0;
+            font-size: 1.46vw;
+        }
+    
+        &__price {
+            font-size: 2.08vw;
+            margin-bottom: 0;
+        }
+    
+        &__quant-block {
+    
+        }
+    
+        &__delete-btn {
+            font-size: 1.25vw;
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .cart-item {
+        gap: 1.67vw;
+        padding-bottom: 2.3vw;
+        padding-right: 7.8vw;
+
+        &__img {
+            width: 9.65vw;
+            height: 13.33vw;
+        }
+    
+        &__content {
+            gap: 2.3vw;
+        }
+    
+        &__row {
+            gap: .56vw;
+
+            &--dir {
+                &_inline {
+    
+                }
+    
+                &_column {
+    
+                }
+            }
+        }
+    
+        &__title {
+            font-size: .97vw;
+        }
+    
+        &__price {
+            font-size: 1.4vw;
+        }
+    
+        &__delete-btn {
+            font-size: .83vw;
+        }
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .cart-item {
+        gap: 1.25vw;
+        padding-bottom: 1.72vw;
+        padding-right: 5.78vw;
+
+        &__img {
+            width: 7.24vw;
+            height: 10vw;
+        }
+    
+        &__content {
+            gap: 1.72vw;
+        }
+    
+        &__row {
+            gap: .42vw;
+
+            &--dir {
+                &_inline {
+    
+                }
+    
+                &_column {
+    
+                }
+            }
+        }
+    
+        &__title {
+            font-size: .73vw;
+        }
+    
+        &__price {
+            font-size: 1.04vw;
+        }
+    
+        &__delete-btn {
+            font-size: .62vw;
+        }
+    }
+    // End inner
+}
+// End XXL

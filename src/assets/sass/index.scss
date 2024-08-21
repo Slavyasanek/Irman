@@ -14,6 +14,13 @@
 @import "./modules/slider-pagination.scss";
 @import "./modules/product-slider.scss";
 @import "./modules/product-profile.scss";
+@import "./modules/backdrop.scss";
+@import "./modules/quant-block.scss";
+@import "./modules/cart-heading.scss";
+@import "./modules/cart-items.scss";
+@import "./modules/cart-item.scss";
+@import "./modules/cart-footer.scss";
+@import "./modules/cart.scss";
 
 // LAYOUT
 @import "./layout/header.scss";
@@ -26,3 +33,4 @@
 @import "./sections/three-col.scss";
 @import "./sections/product-page.scss";
 @import "./sections/related.scss";
+@import "./sections/cart-page.scss";

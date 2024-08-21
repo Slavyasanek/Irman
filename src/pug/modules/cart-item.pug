@@ -1,0 +1,20 @@
+mixin cart-item(imgPath, rowDir, cartClass)
+    .cart-item(class=cartClass)
+        .cart-item__img 
+            picture 
+                img(src=imgPath, alt="item", loading="lazy")
+        //- cart-item__img 
+
+        .cart-item__content 
+            .cart-item__row(class='cart-item__row--dir_'+rowDir) 
+                p.cart-item__title Ексклюзивна Керамічна Ваза Ручної Роботи
+                p.cart-item__price 1 700₴
+                .quant-block.cart-item__quant-block 
+                    button.btn.quant-block__btn.quant-block__btn--minus -
+                    .quant-block__value(data-value="1") 1
+                    button.btn.quant-block__btn.quant-block__btn--minus +
+                //- quant-block
+            //- cart-item__row
+            button.btn.btn-def-link.btn-def-link__black.cart-item__delete-btn Видалити
+        //- cart-item__content 
+    //- cart-item

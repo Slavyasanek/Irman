@@ -1,0 +1,186 @@
+.cart-footer {
+    display: flex;
+    flex-direction: column;
+
+    &__total-price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        line-height: 1.22;
+        font-weight: 500;
+        font-size: 4.44vw;
+    }
+
+    &__val {
+        line-height: 1.22;
+        font-size: 5.56vw;
+        font-weight: 500;
+    }
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        gap: 6.67vw;
+    }
+
+    &__continue-btn {
+        order: 1;
+    }
+
+    &__continue-btn, &__checkout-btn {
+        width: 100%;
+        padding: 4.17vw;
+        font-size: 5vw;
+        line-height: 1.2;
+        font-weight: 500;
+
+        &:hover, &:focus {
+            color: var(--color_white);
+        }
+    }
+}
+// End inner
+
+@include media-M {
+    .cart-footer {
+    
+        &__title {
+            font-size: 2.5vw;
+        }
+    
+        &__val {
+            font-size: 3.12vw;
+        }
+    
+        &__btns {
+            gap: 3.75vw;
+        }
+    
+        &__continue-btn, &__checkout-btn  {
+            padding: 2.34vw;
+            font-size: 2.8vw;
+        }
+    
+    }
+    // End inner
+}
+// End M
+
+
+@include media-L {
+    .cart-footer {
+
+    
+        &__title {
+            font-size: 1.67vw;
+        }
+    
+        &__val {
+            font-size: 2.08vw;
+        }
+    
+        &__btns {
+            gap: 2.5vw;
+
+            &--dir {
+
+                &_inline {
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .cart-footer {
+                        &__continue-btn, &__checkout-btn {
+                            width: max-content;
+                        }
+
+                        &__continue-btn {
+                            order: initial;
+                        }
+                    }
+                }
+            }
+        }
+    
+        &__continue-btn, &__checkout-btn {
+            font-size: 1.88vw;
+        }
+
+        &__continue-btn {
+            padding: 1.56vw 6.15vw;
+        }
+
+        &__checkout-btn {
+            padding: 1.56vw 3.23vw;
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .cart-footer {
+    
+        &__title {
+            font-size: 1.11vw;
+        }
+    
+        &__val {
+            font-size: 1.4vw;
+        }
+    
+        &__btns {
+            gap: 1.67vw;
+        }
+    
+        &__continue-btn, &__checkout-btn {
+            font-size: 1.25vw;
+        }
+
+        
+        &__continue-btn {
+            padding: 1vw 4.1vw;
+        }
+
+        &__checkout-btn {
+            padding: 1vw 2.15vw;
+        }
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .cart-footer {
+    
+        &__title {
+            font-size: .83vw;
+        }
+    
+        &__val {
+            font-size: 1.04vw;
+        }
+    
+        &__btns {
+            gap: 1.25vw;
+        }
+    
+        &__continue-btn, &__checkout-btn {
+            font-size: .94vw;
+        }
+
+        
+        &__continue-btn {
+            padding: .78vw 3.07vw;
+        }
+
+        &__checkout-btn {
+            padding: .78vw 1.61vw;
+        }
+    }
+    // End inner
+}
+// End XXL

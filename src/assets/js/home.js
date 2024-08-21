@@ -125,3 +125,35 @@ if (document.querySelector('.related')) {
         }
     })
 }
+/**
+ *
+ *
+ * @class Cart
+ */
+class Cart {
+    cart = document.querySelector('.backdrop--cart');
+    headerCartOpenButton = document.querySelector('.header__cart-btn');
+    closeCartButton = document.querySelector('.cart-heading__close-btn');
+
+    constructor() {
+        this.init();
+    }
+
+    openCart = () => {
+        this.cart.classList.add('active');
+    }
+
+    closeCart = () => {
+        this.cart.classList.remove('active');
+    }
+
+    init = () => {
+        this.headerCartOpenButton.addEventListener("click", () => this.openCart());
+        this.closeCartButton.addEventListener("click", () => this.closeCart())
+        this.cart.addEventListener("click", e => {
+            if (e.target === e.currentTarget) this.closeCart();
+        })
+    }
+}
+
+new Cart();
