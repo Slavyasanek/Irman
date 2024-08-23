@@ -1,0 +1,15 @@
+.checkout-summary.checkout__summary 
+    a(href="/cart.html").btn.btn--icon.checkout-summary__cart-link
+        +icon('edit') 
+    .checkout-summary__items 
+        +cart-item('./assets/images/cart1.jpg', 'column', 'checkout-summary__item')
+    //- checkout-items
+    .cart-footer.checkout-summary__footer
+        .cart-footer__total-price
+            .cart-footer__title Вартість товарів
+            .cart-footer__val 1 700₴
+        .cart-footer__total-price 
+            .cart-footer__title Вартість доставки
+            .cart-footer__val -
+    //- cart-footer
+//- checkout-summary

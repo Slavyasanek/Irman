@@ -1,0 +1,95 @@
+.checkout {
+    &__container {
+        padding-bottom: 22.22vw;
+    }
+
+    &__title {
+        font-size: 6.11vw;
+        margin-bottom: 6.67vw;
+    }
+
+    &__summary {
+        margin-bottom: 8.9vw;
+    }
+}
+// End inner
+
+@include media-M {
+    .checkout {
+        &__container {
+            padding-bottom: 12.5vw;
+        }
+
+        &__title {
+            margin-bottom: 3.75vw;
+            font-size: 3.44vw;
+        }
+
+        &__summary {
+            margin-bottom: 5vw;
+        }
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .checkout {
+
+        &__title {
+            margin-bottom: 2.5vw;
+            font-size: 2.5vw;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-bottom: 10.4vw;
+            gap:  0 2vw;
+        }
+
+        &__summary {
+            grid-column: 2/3;
+            grid-row: 1/4;    
+            margin-bottom: 0;    
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .checkout {
+
+        &__title {
+            margin-bottom: 1.67vw;
+            font-size: 1.67vw;
+        }
+
+        &__container {
+            padding-bottom: 7vw;
+            gap: 0 7.3vw;
+            grid-template-columns: auto 36vw;
+        }
+
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .checkout {
+
+        &__title {
+            margin-bottom: 1.25vw;
+            font-size: 1.25vw;
+        }
+
+        &__container {
+            padding-bottom: 5.2vw;
+            gap:  0 5.5vw;
+        }
+    }
+    // End inner
+}
+// End XXL

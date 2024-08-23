@@ -21,6 +21,10 @@
 @import "./modules/cart-item.scss";
 @import "./modules/cart-footer.scss";
 @import "./modules/cart.scss";
+@import "./modules/custom-field.scss";
+@import "./modules/checkout-group.scss";
+@import "./modules/checkout-form.scss";
+@import "./modules/checkout-summary.scss";
 
 // LAYOUT
 @import "./layout/header.scss";
@@ -34,3 +38,4 @@
 @import "./sections/product-page.scss";
 @import "./sections/related.scss";
 @import "./sections/cart-page.scss";
+@import "./sections/checkout.scss";

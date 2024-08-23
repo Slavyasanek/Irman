@@ -157,3 +157,75 @@ class Cart {
 }
 
 new Cart();
+
+
+/**
+ *
+ *
+ * @class CustomSelect
+ */
+class CustomSelect {
+    /**
+ * Creates an instance of CustomSelect.
+ * @param {node} selectWrapper
+ * @memberof CustomSelect
+ */ 
+    constructor(selectWrapper) {
+        this.select = selectWrapper;
+
+        this.chosenOption = `.custom-field__selected`;
+        // this.selectedTitle = `.custom-select__chosen`;
+        // this.selectBtn = `.custom-select__btn`;
+        this.selectList = `.custom-field__dropdown`;
+        this.activeClass = `active`;
+        this.init();
+    }
+
+    closeOnBackdropClick = e => {
+        if (e.target !== this.select && !e.target.closest(`.custom-field--type_select.${this.activeClass}`)) this.closeDropdown();
+    }
+
+    openDropdown = () => {
+        this.select.classList.add(this.activeClass);
+        window.addEventListener("click", this.closeOnBackdropClick);
+    }
+
+    closeDropdown = () => {
+        this.select.classList.remove(this.activeClass);
+        window.removeEventListener("click", this.closeOnBackdropClick);
+    }
+
+    toggleDropdown = () => {        
+        if (this.select.classList.contains(this.activeClass)) {
+            this.closeDropdown();
+        } else {
+            if (document.querySelector(`.custom-field--type_select.${this.activeClass}`)) document.querySelector(`.custom-field--type_select.${this.activeClass}`).classList.remove(this.activeClass)
+            this.openDropdown();
+        }
+    }
+
+    selectItem = (e) => {
+        if (e.target.closest('li')) {
+            const selected = this.select.querySelector(this.chosenOption);
+            if (selected) {
+                if (selected.nodeName === 'INPUT') {
+                    selected.value = e.target.closest('li').textContent;
+                    this.select.querySelector('input').value = e.target.closest('li').textContent;
+                } else {
+                    selected.textContent = e.target.closest('li').textContent;
+                    selected.classList.add('chosen');
+                }
+            }
+            this.closeDropdown();
+        }
+    }
+
+    init = () => {
+        this.select.querySelector(this.chosenOption).addEventListener("click", this.toggleDropdown);
+        this.select.querySelector(this.selectList).addEventListener("click", this.selectItem);
+    }
+}
+
+
+Array.from(document.querySelectorAll('.custom-field--type_select')).forEach(sel => new CustomSelect(sel));
+

@@ -1,0 +1,130 @@
+.checkout-summary {
+    position: relative;
+
+    &__cart-link {
+        position: absolute;
+        @include square(6.67vw);
+        top: 3.33vw;
+        right: 3.33vw;
+
+        svg {
+            @include square(100%);
+            fill: var(--color_black);
+        }
+    }
+
+    &__item {
+        padding-right: 13.33vw;
+    }
+
+    &__footer {
+        gap: 4.44vw;
+    }
+}
+// End inner
+
+@include media-M {
+    .checkout-summary {
+        &__cart-link {
+            @include square(3.75vw);
+            top: 1.88vw;
+            right: 1.88vw;
+        }
+
+        &__item {
+            padding-right: 7.5vw;
+        }
+    
+        &__footer {
+            gap: 2.5vw;
+        }
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .checkout-summary {
+        background-color: #F2F2F2;
+        padding: 1.67vw;
+        border-radius: 1.2rem;
+        height: max-content;
+
+        &__cart-link {
+            @include square(2.5vw);
+            top: 1.67vw;
+            right: 1.67vw;
+        }
+
+        &__item {
+            padding-right: 0;
+            .cart-item__row {
+                gap: 2.5vw 0;
+            }
+
+            .cart-item__title {
+                padding-right: 2.5vw;
+            }
+        }
+        
+    
+        &__footer {
+            gap: 2.5vw;
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .checkout-summary {
+
+        &__cart-link {
+            @include square(1.67vw);
+        }
+
+        &__item {
+            .cart-item__row {
+                gap: 1.67vw 0;
+            }
+
+            .cart-item__title {
+                padding-right: 2.6vw;
+            }
+        }
+    
+        &__footer {
+            gap: 1.67vw;
+        }
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .checkout-summary {
+        padding: 1.25vw;
+
+        &__cart-link {
+            @include square(1.25vw);
+            top: 1.25vw;
+            right: 1.25vw;
+        }
+
+        &__item {
+            .cart-item__row {
+                gap: 1.25vw 0;
+            }
+
+            .cart-item__title {
+                padding-right: 1.67vw;
+            }
+        }
+
+        &__footer {
+            gap: 1.25vw;
+        }
+    }
+    // End inner
+}
+// End XXL

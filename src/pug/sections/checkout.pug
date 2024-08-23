@@ -1,0 +1,112 @@
+secction.checkout 
+    .container.checkout__container
+        h2.section-title.checkout__title Оформлення замовлення
+        include ../modules/checkout-summary
+        form.checkout__form.checkout-form(action="/", autocomplete="off")
+            .checkout-group.checkout-form__group 
+                .checkout-group__wrapper 
+                    .custom-field.custom-field--type_input.checkout-group__input 
+                        label(for="name").custom-field__label Ім‘я*
+                        .custom-field__input-wr
+                            input(type="text", name="name", id="name", placeholder="Введіть своє ім’я", required).custom-field__selected
+                        //- custom-field__input-wr 
+                        .custom-field__error Обов'язкове поле 
+                    //-  custom-field   
+                    .custom-field.custom-field--type_input.custom-field--type_icon.checkout-group__input 
+                        label(for="email").custom-field__label E-mail
+                        .custom-field__input-wr 
+                            input(type="text", name="email", id="email", placeholder="Введіть свою пошту", required).custom-field__selected
+                            +icon('mail')
+                        //- custom-field__input-wr 
+                    //- custom-field
+                //- checkout-group__wrapper 
+
+                .checkout-group__wrapper 
+                    .custom-field.custom-field--type_input.checkout-group__input 
+                        label(for="surname").custom-field__label Прізвище*
+                        .custom-field__input-wr    
+                            input(type="text", name="name",id="surname", placeholder="Введіть своє прізвище", required).custom-field__selected
+                        //- custom-field__input-wr 
+                    //-  custom-field   
+                    .custom-field.custom-field--type_input.checkout-group__input 
+                        label(for="number").custom-field__label Телефон*
+                        .custom-field__input-wr 
+                            input(type="text", name="tel",id="number", placeholder="+380__ ___ __ __", required).custom-field__selected
+                        //- custom-field__input-wr 
+                    //- custom-field
+                //- checkout-group__wrapper 
+            //- checkout-group
+
+            .checkout-group.checkout-form__group 
+                h3.section-title.checkout-group__title Спосіб доставки
+                .checkout-group__wrapper 
+                    .custom-field.custom-field--type_select.checkout-group__input
+                        label(for="delivery-type").custom-field__label Спосіб доставки*
+                        .custom-field__input-wr
+                            input(type="text", name="delivery-type", id="delivery-type", placeholder="Оберіть спосіб доставки").custom-field__selected
+                            .custom-field__btn     
+                                +icon('arrow-down')
+                            .custom-field__dropdown 
+                                ul.custom-field__list 
+                                    li.custom-field__item Нова пошта
+                                    li.custom-field__item Укр пошта
+                                    li.custom-field__item Поштомат
+                        //- custom-field__input-wr 
+                    //- custom-field--type_select
+
+                    .custom-field.custom-field--type_select.checkout-group__input
+                        label(for="delivery-department").custom-field__label Відділення*
+                        .custom-field__input-wr 
+                            input(type="hidden", name="delivery-department", id="delivery-department", placeholder="Оберіть відділення")
+                            .custom-field__selected.custom-field__selected--text Оберіть спосіб оплати
+                            .custom-field__btn 
+                                +icon('arrow-down')
+                            .custom-field__dropdown 
+                                ul.custom-field__list 
+                                    li.custom-field__item Нова пошта
+                                    li.custom-field__item Укр пошта
+                                    li.custom-field__item Поштомат
+                        //- custom-field__input-wr 
+                    //- custom-field--type_select
+                //- checkout-group__wrapper
+
+                .checkout-group__wrapper
+                    .custom-field.custom-field--type_select.checkout-group__input
+                        label(for="city").custom-field__label Місто*
+                        .custom-field__input-wr 
+                            input(type="text", name="city", id="city", placeholder="Оберіть місто").custom-field__selected
+                            .custom-field__btn     
+                                +icon('arrow-down')
+                            .custom-field__dropdown 
+                                ul.custom-field__list 
+                                    li.custom-field__item Нова пошта
+                                    li.custom-field__item Укр пошта
+                                    li.custom-field__item Поштомат
+                        //- custom-field__input-wr 
+                    //- custom-field--type_select
+                //- checkout-group__wrapper
+            //- checkout-group
+            .checkout-group.checkout-form__group 
+                h3.section-title.checkout-group__title Оплата
+                .checkout-group__wrapper
+                    .custom-field.custom-field--type_select.checkout-group__input
+                        label(for="payment").custom-field__label Оплата*
+                        .custom-field__input-wr 
+                            input(type="hidden", name="payment", id="payment", placeholder="Оберіть спосіб оплати")
+                            .custom-field__selected.custom-field__selected--text Оберіть спосіб оплати
+                            .custom-field__btn     
+                                +icon('arrow-down')
+                            .custom-field__dropdown 
+                                ul.custom-field__list 
+                                    li.custom-field__item При отриманні
+                                    li.custom-field__item При отриманні
+                        //- custom-field__input-wr 
+                        .custom-field__error Обов'язкове поле
+                    //- custom-field--type_select
+                //- checkout-group__wrapper
+            //- checkout-group
+
+            button(type="submit").btn.btn--full_accent.checkout-form__btn Оформити замовлення
+        //- checkout-form
+    //- container
+//- checkout 
