@@ -1,19 +1,32 @@
 .social-icon {
     @include square(8.9vw);
 
-    &--fill {
-        fill: var(--color_black);
+    svg {
+        @include square(100%);
+    }
 
+    &--fill {
         svg {
-            fill: var(--color_accent);
+            fill: var(--color_black);
         }
+
+        &:hover {
+            svg {
+                fill: var(--color_accent);
+            }
+        }
+
     }
 
     &--stroke {
-        stroke: var(--color_black);
-
         svg {
-            stroke: var(--color_accent);
+            stroke: var(--color_black);
+        }
+
+        &:hover {
+            svg {
+                stroke: var(--color_accent);
+            }
         }
     }
 }

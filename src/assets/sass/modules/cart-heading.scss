@@ -7,6 +7,13 @@
         top: 2.22vw;
         right: 2.22vw;
         @include square(8.9vw);
+        fill: var(--color_grey);
+
+        &:hover {
+            svg {
+                fill: var(--color_accent);
+            }
+        }
 
         svg {
             @include square(100%);

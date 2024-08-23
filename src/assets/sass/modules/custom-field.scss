@@ -47,6 +47,18 @@
         border-radius: 0 0 .4rem .4rem;
         @include el-hide;
         transition: var(--transition);
+        max-height: 15rem;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--color_accent);
+            border-radius: .8rem;
+        }
+    
+        &::-webkit-scrollbar {
+            width: .4rem;
+        }
+    
     }
 
     &__item {

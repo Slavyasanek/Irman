@@ -1,6 +1,6 @@
 mixin cart-item(imgPath, rowDir, cartClass)
     .cart-item(class=cartClass)
-        .cart-item__img 
+        a(href="product.html").cart-item__img 
             picture 
                 img(src=imgPath, alt="item", loading="lazy")
         //- cart-item__img 

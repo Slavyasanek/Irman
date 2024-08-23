@@ -6,6 +6,10 @@
         width: max-content;
         font-size: 5.56vw;
         line-height: 1.2;
+        transition: var(--transition);
+        &:hover {
+            color: var(--color_accent);
+        }
 
 
         &:not(:first-of-type) {
