@@ -3,21 +3,8 @@
     position: relative;
 
     &__close-btn {
-        position: absolute;
         top: 2.22vw;
         right: 2.22vw;
-        @include square(8.9vw);
-        fill: var(--color_grey);
-
-        &:hover {
-            svg {
-                fill: var(--color_accent);
-            }
-        }
-
-        svg {
-            @include square(100%);
-        }
     }
 
     &__title {
@@ -31,7 +18,6 @@
         padding-top: 8.12vw;
 
         &__close-btn {
-            @include square(5vw);
             top: 1.25vw;
             right: 1.25vw;
         }
@@ -49,7 +35,6 @@
         padding-top: 4.8vw;
 
         &__close-btn {
-            @include square(3.33vw);
             top: 0;
             right: 0;
         }
@@ -65,10 +50,6 @@
 @include media-XL {
     .cart-heading {
         padding-top: 3.2vw;
-
-        &__close-btn {
-            @include square(2.22vw);
-        }
     
         &__title {
             margin-bottom: 1vw;
@@ -81,10 +62,6 @@
 @include media-XXL {
     .cart-heading {
         padding-top: 2.4vw;
-
-        &__close-btn {
-            @include square(1.67vw);
-        }
     
         &__title {
             margin-bottom: 0.8vw;

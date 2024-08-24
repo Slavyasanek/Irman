@@ -185,41 +185,52 @@ if (document.querySelector('.related')) {
         }
     })
 }
-/**
- *
- *
- * @class Cart
- */
-class Cart {
-    cart = document.querySelector('.backdrop--cart');
-    headerCartOpenButton = document.querySelector('.header__cart-btn');
-    closeCartButton = document.querySelector('.cart-heading__close-btn');
 
-    constructor() {
+class Modal {
+    /**
+     * Creates an instance of Modal.
+     * @param {string} modalClass
+     * @param {string} modalOpenButtonClass
+     * @param {string} modalCloseBtnClass
+     * @param {string} [activeClass='active']
+     * @memberof Modal
+     */
+
+    constructor(modalClass, modalOpenButtonClass, modalCloseBtnClass, activeClass = 'active') {
+        this.modalClass = modalClass;
+        this.modal = document.querySelector(modalClass);
+
+        this.modalOpenButtonClass = modalOpenButtonClass;
+        this.modalOpenButton = document.querySelector(modalOpenButtonClass);
+
+        this.modalCloseBtnClass = modalCloseBtnClass;
+        this.modalCloseBtn = document.querySelector(modalCloseBtnClass);
+        this.activeClass = activeClass;
+
         this.init();
     }
 
-    openCart = () => {
-        this.cart.classList.add('active');
+    openModal = () => {
+        this.modal.classList.add(this.activeClass);
         disableScroll();
     }
 
-    closeCart = () => {
-        this.cart.classList.remove('active');
+    closeModal = () => {
+        this.modal.classList.remove(this.activeClass);
         enableScroll();
     }
 
     init = () => {
-        this.headerCartOpenButton.addEventListener("click", () => this.openCart());
-        this.closeCartButton.addEventListener("click", () => this.closeCart())
-        this.cart.addEventListener("click", e => {
-            if (e.target === e.currentTarget) this.closeCart();
+        this.modalOpenButton.addEventListener("click", this.openModal);
+        this.modalCloseBtn.addEventListener("click", this.closeModal);
+        this.modal.addEventListener("click", e => {
+            if (e.target === e.currentTarget) this.closeModal();
         })
     }
 }
 
-new Cart();
-
+new Modal('.backdrop--cart', '.header__cart-btn', '.cart-heading__close-btn')
+new Modal('.backdrop--modal', '.header__order-btn', '.modal__close-btn')
 
 /**
  *

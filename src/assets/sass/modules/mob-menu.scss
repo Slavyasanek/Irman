@@ -1,5 +1,5 @@
 .mob-menu {
-    background-color: #FAF0E6;
+    background-color: var(--color_accent-200);
     position: fixed;
     top: 0;
     left: 0;
@@ -39,15 +39,8 @@
     }
 
     &__close-btn {
-        @include square(8.9vw);
-        position: absolute;
         top: 4.44vw;
         right: 4.44vw;
-
-        svg {
-            @include square(100%);
-            fill: var(--color_grey);
-        }
     }
 
     &.open {
@@ -80,7 +73,6 @@
 
         
         &__close-btn {
-            @include square(5vw);
             top: 2.5vw;
             right: 2.5vw;
         }

@@ -1,8 +1,5 @@
 .three-col {
-    font-size: 3.9vw;
-    color: var(--color_black);
-    line-height: 1.5;
-
+    
     &__container {
         display: flex;
         flex-direction: column;
@@ -54,8 +51,6 @@
 
 @include media-M {
     .three-col {
-        font-size: 2.2vw;
-
         &__container {
             gap: 3.75vw;
         }
@@ -85,7 +80,6 @@
 
 @include media-L {
     .three-col {
-        font-size: 1.46vw;
 
         &__container {
             gap: 1.6vw;
@@ -94,18 +88,6 @@
     
         &__img {
             height: 100%;
-            // position: relative;
-
-            // picture {
-            //     position: absolute;
-            //     @include push-full;
-            // }
-
-            // &::after {
-            //     @include pseudo(block, relative);
-            //     width: 100%;
-            //     padding-top: 136.4%;
-            // }
         }
     
         &__left-img {
@@ -137,8 +119,6 @@
 
 @include media-XL {
     .three-col {
-        font-size: .97vw;
-
         &__container {
             display: grid;
             grid-template-columns: 23.6% auto 23.6%;

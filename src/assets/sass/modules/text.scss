@@ -1,0 +1,72 @@
+.text {
+    color: var(--color_black);
+}
+
+.text--size {
+    &_14 {
+        line-height: 1.5;
+        font-size: 3.9vw;
+    }
+
+    &_16 {
+        line-height: 1.5;
+        font-size: 4.44vw;
+    }
+}
+// End inner
+
+@include media-M {
+    .text--size {
+        &_14 {
+            font-size: 2.2vw;
+        }
+    
+        &_16 {
+            font-size: 2.5vw;
+        }
+    }
+    // End inner
+}
+// end M
+
+@include media-L {
+    .text--size {
+        &_14 {
+            font-size: 1.46vw;
+        }
+    
+        &_16 {
+            font-size: 1.67vw;
+        }
+    }
+    // End inner
+}
+// end L
+
+@include media-XL {
+    .text--size {
+        &_14 {
+            font-size: .97vw;
+        }
+    
+        &_16 {
+            font-size: 1.11vw;
+        }
+    }
+    // End inner
+}
+// end XL
+
+// @include media-XXL {
+//     .text--size {
+//         &_14 {
+//             font-size: .73vw;
+//         }
+    
+//         &_16 {
+//             font-size: .83vw;
+//         }
+//     }
+//     // End inner
+// }
+// // end XXL

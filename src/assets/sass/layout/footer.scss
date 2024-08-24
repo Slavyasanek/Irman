@@ -1,10 +1,6 @@
 .footer {
-    background: #F2F2F2;
-    color: var(--color_black);
-    font-size: 3.6vw;
-    line-height: 1.5;
+    background: var(--color_white-200);
     padding-block: 6.67vw;
-
 
     &__container {
         display: flex;
@@ -72,7 +68,6 @@
 
 @include media-M {
     .footer {
-        font-size: 2vw;
         padding-block: 3.75vw;
 
         &__container {
@@ -116,7 +111,6 @@
 @include media-L {
     .footer {
         padding-block: 3.12vw;
-        font-size: 1.46vw;
 
         &__container {
             gap: 22.6vw;
@@ -161,7 +155,6 @@
 @include media-XL {
     .footer {
         padding-block: 2.1vw;
-        font-size: .97vw;
 
         &__subtitle {
             font-size: 1.11vw;
@@ -195,12 +188,10 @@
 @include media-XXL {
     .footer {
         padding-block: 1.56vw;
-        // font-size: .73vw;
-        font-size: .87vw;
 
         &__subtitle {
             // font-size: .83vw;
-            font-size: .9vw;
+            // font-size: .9vw;
             margin-bottom: 0.62vw;
         }
     

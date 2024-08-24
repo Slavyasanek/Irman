@@ -1,0 +1,18 @@
+.backdrop.backdrop--modal
+    .modal.backdrop__inner
+        button.btn.btn--icon.close-btn.modal__close-btn
+            +icon('close')
+        h2.modal__title Індивідуальне замовлення
+        h5.modal__subtitle Ми створюємо унікальні вироби на замовлення, враховуючи Ваші побажання
+        p.text.text--size_14.modal__txt Зв’яжіться з нами для обговорення деталей через месенджер або інстаграм
+        .modal__btns 
+            a(href="http://", target="_blank", rel="noopener noreferrer").btn.btn--icon.btn--border_accent.modal__btn
+                .btn__content.social-icon--stroke
+                    +icon('telegram', '')
+                    | Написати
+            a(href="http://", target="_blank", rel="noopener noreferrer").btn.btn--icon.btn--border_accent.modal__btn
+                .btn__content.social-icon--fill 
+                    +icon('instagram', '')
+                    | Написати
+    //- modal
+//- backdrop

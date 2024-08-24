@@ -1,9 +1,10 @@
-.breadcrumbs + section {
+.breadcrumbs + section, .breadcrumbs + article {
     padding-top: 0;
 }
 
 .breadcrumbs {
     padding-block: 3.75vw;
+    @extend .text--size_14;
 
     &__list {
         display: flex;
@@ -15,7 +16,6 @@
     &__item {
         line-height: 1.5;
         color: var(--color_black);
-        font-size: 3.9vw;
 
         &--link {
             a {
@@ -56,7 +56,6 @@
         }
     
         &__item {
-            font-size: 2.2vw;
 
             &:not(:first-child) {
 
@@ -80,7 +79,6 @@
         }
     
         &__item {
-            font-size: 1.46vw;
 
             &:not(:first-child) {
                 &::before {
@@ -102,7 +100,7 @@
         }
     
         &__item {
-            font-size: .97vw;
+
             &:not(:first-child) {
                 &::before {
                     left: -1.4vw;
@@ -114,26 +112,3 @@
     // End inner
 }
 // End XL
-
-@include media-XXL {
-    .breadcrumbs {
-        padding-block: .83vw;
-
-        &__list {
-            gap: 1.25vw;
-        }
-    
-        &__item {
-            // font-size: .73vw;
-            font-size: .8vw;
-            &:not(:first-child) {
-                &::before {
-                    left: -1.04vw;
-                    @include square(.83vw);
-                }
-            }
-        }
-    }
-    // End inner
-}
-// End XXL

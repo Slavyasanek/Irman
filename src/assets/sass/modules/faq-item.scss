@@ -15,8 +15,6 @@
     &__quest {
         font-weight: 500;
         font-style: italic;
-        line-height: 1.5;
-        font-size: 4.44vw;
     }
 
     &__btn {
@@ -36,9 +34,6 @@
     }
 
     &__answer {
-        font-size: 3.9vw;
-        line-height: 1.5;
-        color: var(--color_black);
         transition: var(--transition);
         transform: translateY(-70%);
         @include el-hide;
@@ -82,16 +77,11 @@
             gap: 1.56vw;
         }
     
-        &__quest {
-            font-size: 2.5vw
-        }
-    
         &__btn {
             @include square(3.75vw);
         }
     
         &__answer {
-            font-size: 2.2vw;
             margin-top: 1.25vw;
 
             p {
@@ -113,16 +103,11 @@
             gap: 1vw;
         }
     
-        &__quest {
-            font-size: 1.67vw
-        }
-    
         &__btn {
             @include square(2.5vw);
         }
 
         &__answer {
-            font-size: 1.46vw;
             margin-top: .83vw;
 
             p {
@@ -144,16 +129,11 @@
             gap: .7vw;
         }
     
-        &__quest {
-            font-size: 1.11vw
-        }
-    
         &__btn {
             @include square(1.67vw);
         }
 
         &__answer {
-            font-size: .97vw;
             margin-top: .56vw;
 
             p {
@@ -167,33 +147,28 @@
 }
 // End XL
 
-@include media-XXL {
-    .faq-item {
-        padding: .62vw .52vw;
+// @include media-XXL {
+//     .faq-item {
+//         padding: .62vw .52vw;
 
-        &__heading {
-            gap: .52vw;
-        }
+//         &__heading {
+//             gap: .52vw;
+//         }
     
-        &__quest {
-            font-size: .83vw;
-        }
-    
-        &__btn {
-            @include square(1.25vw);
-        }
+//         &__btn {
+//             @include square(1.25vw);
+//         }
 
-        &__answer {
-            font-size: .73vw;
-            margin-top: .42vw;
+//         &__answer {
+//             margin-top: .42vw;
 
-            p {
-                &:not(:last-child) {
-                    margin-bottom: .62vw;
-                }
-            }
-        }
-    }
-    // End inner
-}
-// End XXL
+//             p {
+//                 &:not(:last-child) {
+//                     margin-bottom: .62vw;
+//                 }
+//             }
+//         }
+//     }
+//     // End inner
+// }
+// // End XXL

@@ -56,10 +56,10 @@
 }
 // End XL
 
-@include media-XXL {
-    .social-icon {
-        @include square(1.25vw);
-    }
-    // End inner
-}
-// End XXL
+// @include media-XXL {
+//     .social-icon {
+//         @include square(1.25vw);
+//     }
+//     // End inner
+// }
+// // End XXL

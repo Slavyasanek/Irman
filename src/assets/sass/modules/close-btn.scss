@@ -1,0 +1,45 @@
+.close-btn {
+    position: absolute;
+    @include square(8.9vw);
+
+    fill: var(--color_grey);
+
+    &:hover {
+        svg {
+            fill: var(--color_accent);
+        }
+    }
+
+    svg {
+        @include square(100%);
+    }
+}
+// End inner
+
+@include media-M {
+    .close-btn {
+        @include square(5vw);
+    }
+}
+// End M
+
+@include media-L {
+    .close-btn {
+        @include square(3.33vw);
+    }
+}
+// End L
+
+@include media-XL {
+    .close-btn {
+        @include square(2.22vw);
+    }
+}
+// End XL
+
+@include media-XXL {
+    .close-btn {
+        @include square(1.67vw);
+    }
+}
+// End XXL

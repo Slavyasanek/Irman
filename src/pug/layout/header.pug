@@ -20,14 +20,14 @@ header.header
         .header__right-side
             button.btn.btn--border_accent.header__order-btn 
                 .btn__content Індивідуальне замовлення
-            button.btn.btn--icon.header__cart-btn 
+            button.btn.btn--icon.header__cart-btn.cart-btn(data-cart="1")
                 +icon('basket')
         //- header__rigth-menu 
     //- header__container 
 //- header
 
 .mob-menu.header__mob-menu
-    button.btn.btn--icon.mob-menu__close-btn
+    button.btn.btn--icon.close-btn.mob-menu__close-btn
         +icon('close')
     .mob-menu__menu 
         ul 

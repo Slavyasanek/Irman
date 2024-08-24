@@ -4,11 +4,13 @@
 @import "./modules/btns.scss";
 @import "./modules/container.scss";
 @import "./modules/hamburger.scss";
-@import "./modules/picture.scss";
 @import "./modules/section.scss";
 @import "./modules/grid.scss";
 @import "./modules/section-title.scss";
 @import "./modules/social-icon.scss";
+@import "./modules/cart-btn.scss";
+@import "./modules/close-btn.scss";
+@import "./modules/text.scss";
 @import "./modules/product-card.scss";
 @import "./modules/tabs.scss";
 @import "./modules/breadcrumbs.scss";
@@ -28,6 +30,7 @@
 @import "./modules/checkout-summary.scss";
 @import "./modules/faq-item.scss";
 @import "./modules/mob-menu.scss";
+@import "./modules/modal.scss";
 
 // LAYOUT
 @import "./layout/header.scss";

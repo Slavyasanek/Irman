@@ -78,19 +78,19 @@
 }
 // End XL
 
-@include media-XXL {
-    .tabs {
+// @include media-XXL {
+//     .tabs {
 
-        &__item {
-            // font-size: .83vw;
-            font-size: .9vw;
+//         &__item {
+//             // font-size: .83vw;
+//             font-size: .9vw;
 
-            &:not(:first-of-type) {
-                margin-left: 1.25vw;
-            }
-        }
+//             &:not(:first-of-type) {
+//                 margin-left: 1.25vw;
+//             }
+//         }
 
-    }
-    // End inner
-}
-// End XXL
+//     }
+//     // End inner
+// }
+// // End XXL

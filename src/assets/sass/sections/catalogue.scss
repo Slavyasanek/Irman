@@ -60,18 +60,18 @@
 }
 // End XL
 
-@include media-XXL {
-    .catalogue {
+// @include media-XXL {
+//     .catalogue {
 
-        &__tabs {
-            margin-bottom: 1.35vw;
-        }
+//         &__tabs {
+//             margin-bottom: 1.35vw;
+//         }
 
-        &__load-more {
-            font-size: .73vw;
-            margin-top: 1.67vw;
-        }
-    }
-    // End inner
-}
-// End XXL
+//         &__load-more {
+//             font-size: .73vw;
+//             margin-top: 1.67vw;
+//         }
+//     }
+//     // End inner
+// }
+// // End XXL

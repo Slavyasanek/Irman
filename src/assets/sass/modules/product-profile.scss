@@ -1,6 +1,4 @@
 .product-profile {
-    line-height: 1.5;
-    font-size: 3.9vw;
 
     &__status {
         line-height: 1.21;
@@ -82,8 +80,6 @@
 
 @include media-M {
     .product-profile {
-        font-size: 2.2vw;
-
         &__price {
             margin-block: 2.5vw 3.75vw;
             font-size: 3.12vw;
@@ -132,7 +128,6 @@
 
 @include media-L {
     .product-profile {
-        font-size: 1.46vw;
 
         &__status {
             margin-top: 3.33vw;
@@ -185,7 +180,6 @@
 
 @include media-XL {
     .product-profile {
-        font-size: .97vw;
 
         &__status {
             margin-top: 2.22vw;

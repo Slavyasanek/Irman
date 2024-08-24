@@ -1,0 +1,243 @@
+.modal {
+    background-color: var(--color_accent-200);
+    @include push--center-middle;
+    border-radius: 2.4rem;
+    padding: 15.56vw 4.44vw 13.33vw;
+    width: 100%;
+
+    &__close-btn {
+        top: 4.44vw;
+        right: 4.44vw;
+    }
+
+    &__title {
+        line-height: 1.6;
+        font-family: var(--font__title);
+        margin: 0 0 3.33vw;
+        font-size: 5.83vw;
+    }
+
+    &__subtitle {
+        line-height: 1.5;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 4.17vw;
+        margin: 0 0 4.44vw;
+    }
+
+    &__txt {
+        margin: 0;
+    }
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        margin-top: 11.11vw;
+        gap: 4.44vw; 
+    }
+
+    &__btn {
+        line-height: 1.21;
+        font-size: 4.44vw;
+        gap: 4.44vw;
+        padding: 3vw;
+        font-weight: 500;
+
+        .btn__content {
+            gap: 4.44vw;
+        }
+
+        svg {
+            @include square(6.67vw);
+        }
+
+        &:hover {
+            svg {
+                fill: var(--color_white);
+            }
+        }
+
+        &:first-child {
+            &:hover {
+                svg {
+                    stroke: var(--color_white);
+                }
+            }
+        }
+    }
+}
+// End inner
+
+@include media-M {
+    .modal {
+        padding: 8.75vw 2.5vw 7.5vw;
+        width: 56.25vw;
+
+        &__close-btn {
+            top: 2.5vw;
+            right: 2.5vw;
+        }
+    
+        &__title {
+            font-size: 3.3vw;
+            margin-bottom: 1.88vw;
+        }
+    
+        &__subtitle {
+            font-size: 2.34vw;
+            margin-bottom: 2.5vw;
+        }
+
+        &__btns {
+            margin-top: 6.25vw;
+            gap: 2.5vw;
+        }
+    
+        &__btn {
+            font-size: 2.5vw;
+            gap: 2.5vw;
+            padding: 1.72vw;
+
+            .btn__content {
+                gap: 2.5vw;
+            }
+
+            svg {
+                @include square(3.75vw);
+            }
+
+        }
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .modal {
+        padding: 5vw 11.35vw;
+        width: 75.77vw;
+
+        &__close-btn {
+            top: 2.5vw;
+            right: 2.5vw;
+        }
+    
+        &__title {
+            text-align: center;
+            font-size: 2.5vw;
+            margin-bottom: 2.5vw;
+        }
+    
+        &__subtitle {
+            font-size: 1.67vw;
+            margin-bottom: 2.5vw;
+        }
+    
+        &__btns {
+            margin-top: 3.33vw;
+            gap: 1.67vw;
+        }
+    
+        &__btn {
+            font-size: 1.67vw;
+            gap: 1.67vw;
+            padding: 1.15vw;
+
+            .btn__content {
+                gap: 1.67vw;
+            }
+
+            svg {
+                @include square(2.5vw);
+            }
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .modal {
+        padding: 3.33vw 7.57vw;
+        width: 51.18vw;
+
+        &__close-btn {
+            top: 1.67vw;
+            right: 1.67vw;
+        }
+    
+        &__title {
+            font-size: 1.67vw;
+            margin-bottom: 1.67vw;
+        }
+    
+        &__subtitle {
+            font-size: 1.11vw;
+            margin-bottom: 1.67vw;
+        }
+    
+        &__btns {
+            margin-top: 2.22vw;
+            gap: 1.11vw;
+        }
+    
+        &__btn {
+            font-size: 1.11vw;
+            gap: 1.11vw;
+            padding: .76vw;
+
+            .btn__content {
+                gap: 1.11vw;
+            }
+
+            svg {
+                @include square(1.67vw);
+            }
+        }
+    }
+    // End inner
+}
+// End XL
+
+// @include media-XXL {
+//     .modal {
+//         padding: 2.5vw 5.7vw;
+//         width: 38.4vw;
+
+//         &__close-btn {
+//             top: 1.25vw;
+//             right: 1.25vw;
+//         }
+    
+//         &__title {
+//             font-size: 1.25vw;
+//             margin-bottom: 1.25vw;
+//         }
+    
+//         &__subtitle {
+//             font-size: .83vw;
+//             margin-bottom: 1.25vw;
+//         }
+    
+//         &__btns {
+//             margin-top: 1.67vw;
+//             gap: .83vw;
+//         }
+    
+//         &__btn {
+//             font-size: .83vw;
+//             gap: .83vw;
+//             padding: .57vw;
+
+//             .btn__content {
+//                 gap: .83vw;
+//             }
+
+//             svg {
+//                 @include square(1.25vw);
+//             }
+//         }
+//     }
+//     // End inner
+// }
+// // End XXL

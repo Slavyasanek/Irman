@@ -85,10 +85,15 @@
                 flex-direction: row;
                 gap: 4.4vw;
             }
+            
 
             a {
-                color: inherit;
+                color: var(--color_black);
                 line-height: 1.2;
+
+                &:hover {
+                    color: var(--color_accent);
+                }
             }
         }
     
@@ -118,6 +123,15 @@
     
         &__cart-btn {
             @include square(3.33vw);
+            svg {
+                fill: var(--color_black);
+            }
+
+            &:hover {
+                svg {
+                    fill: var(--color_accent);
+                }
+            }
         }
 
         &.menu-open {
@@ -171,7 +185,8 @@
         padding-block: 1.25vw;
     
         &__menu {
-            font-size: .94vw;
+            // font-size: .94vw;
+            font-size: 1.1vw;
 
             ul {
                 gap: 2.2vw;
