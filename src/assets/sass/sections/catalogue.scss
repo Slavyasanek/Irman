@@ -1,5 +1,4 @@
 .catalogue {
-    padding-block: 11.11vw;
     overflow: hidden;
     
     &__tabs {
@@ -16,7 +15,6 @@
 
 @include media-M {
     .catalogue {
-        padding-block: 6.25vw;
 
         &__tabs {
             margin-bottom: 5.9vvw;
@@ -33,7 +31,6 @@
 
 @include media-L {
     .catalogue {
-        padding-block: 4.17vw;
         &__tabs {
             margin-bottom: 2.7vw;
         }
@@ -49,7 +46,6 @@
 
 @include media-XL {
     .catalogue {
-        padding-block: 6.9vw 3.47vw;
 
         &__tabs {
             margin-bottom: 1.8vw;
@@ -66,7 +62,6 @@
 
 @include media-XXL {
     .catalogue {
-        padding-block: 5.2vw 2.6vw;
 
         &__tabs {
             margin-bottom: 1.35vw;

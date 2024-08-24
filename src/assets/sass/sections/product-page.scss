@@ -1,6 +1,4 @@
 .product-page {
-    padding-bottom: 11.11vw;
-
     &__container {
         display: flex;
         flex-direction: column;
@@ -17,7 +15,6 @@
 
 @include media-M {
     .product-page {
-        padding-bottom: 6.25vw;
 
         &__container {
             gap: 3.75vw;
@@ -33,7 +30,6 @@
 
 @include media-L {
     .product-page {
-        padding-bottom: 10.4vw;
 
         &__container {
             display: grid;
@@ -60,7 +56,7 @@
 
 @include media-XL {
     .product-page {
-        padding-bottom: 6.94vw;
+
         &__container {
             gap:  0 1.67vw;
             grid-template-columns: repeat(2, 36vw);
@@ -77,7 +73,6 @@
 
 @include media-XXL {
     .product-page {
-        padding-bottom: 5.2vw;
 
         &__container {
             // gap:  0 1.25vw;

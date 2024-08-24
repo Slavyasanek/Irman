@@ -2,7 +2,6 @@
     font-size: 3.9vw;
     color: var(--color_black);
     line-height: 1.5;
-    padding-block: 5.56vw 22.2vw;
 
     &__container {
         display: flex;
@@ -56,7 +55,6 @@
 @include media-M {
     .three-col {
         font-size: 2.2vw;
-        padding-block: 3.12vw 12.5vw;
 
         &__container {
             gap: 3.75vw;
@@ -88,7 +86,6 @@
 @include media-L {
     .three-col {
         font-size: 1.46vw;
-        padding-block: 5.2vw 10.4vw;
 
         &__container {
             gap: 1.6vw;
@@ -141,7 +138,6 @@
 @include media-XL {
     .three-col {
         font-size: .97vw;
-        padding-block: 3.5vw 6.9vw;
 
         &__container {
             display: grid;

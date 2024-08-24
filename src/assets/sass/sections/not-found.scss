@@ -1,0 +1,155 @@
+.not-found {
+
+    &__sign {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__letter  {
+        font-size: 41.6vw;
+        line-height: 1.6;
+        font-family: var(--font__title);
+        position: relative;
+    }
+
+
+    &__img {
+        @include square(41.6vw);
+        flex-shrink: 0;
+        margin-inline: -5.56vw;
+
+        img {
+            @include contain-image;
+        }
+
+    }
+
+    &__title {
+        margin-top: -7.22vw;
+    }
+
+    &__link {
+        margin-top: 13.9vw;
+        width: 100%;
+        padding: 4.17vw;
+        font-size: 5vw;
+        line-height: 1.22;
+        border-radius: 7.4% / 46%;
+    }
+}
+// End inner
+
+@include media-M {
+    .not-found {
+    
+        &__letter  {
+            font-size: 23.44vw;
+        }
+    
+    
+        &__img {
+            @include square(23.44vw);
+            margin-inline: -3.12vw;
+        }
+    
+        &__title {
+            margin-top: -4vw;
+        }
+    
+        &__link {
+            margin-top: 7.8vw;
+            padding: 2.34vw;
+            font-size: 2.8vw;
+            border-radius: 4.1% / 46%;
+        }
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .not-found {
+    
+        &__sign {
+            line-height: 1.75;
+            font-size: 31.25vw;
+        }
+    
+        &__img {
+            @include square(32vw);
+            margin-inline: -1.77vw;
+        }
+    
+        &__title {
+            margin-top: -2vw;
+            text-align: center;
+        }
+    
+        &__link {
+            margin-top: 4.17vw;
+            width: max-content;
+            font-size: 1.88vw;
+            padding: 1.56vw 7.97vw;
+            margin-inline: auto;
+            border-radius: 10% / 46%;
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .not-found {
+    
+        &__letter  {
+            font-size: 20.8vw;
+        }
+    
+        &__img {
+            @include square(21.32vw);
+            margin-inline: -1.18vw;
+        }
+    
+        &__title {
+            margin-top: -5.4vw;
+        }
+    
+        &__link {
+            margin-top: 2.8vw;
+            font-size: 1.25vw;
+            padding: 1vw 5.3vw;
+        }
+    }
+    // End inner
+}
+// End XL
+
+// @include media-XXL {
+//     .not-found {
+
+    
+//         &__letter  {
+//             font-size: 15.6vw;
+//         }
+    
+//         &__img {
+//             @include square(16vw);
+//             margin-inline: -.9w;
+//         }
+    
+//         &__title {
+//             margin-top: -4vw;
+//         }
+    
+//         &__link {
+//             margin-top: 2vw;
+//             font-size: .94vw;
+//             padding: .78vw 4vw;
+//         }
+//     }
+//     // End inner
+// }
+// // End XXL

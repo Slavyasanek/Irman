@@ -1,0 +1,165 @@
+.section {
+    &--pt {
+        // 20 - 50
+        &_XS {
+            padding-top: 5.56vw;
+        }
+
+        // 40 - 50
+        &_S {
+            padding-top: 11.11vw;
+        }
+
+        // 80 - 100
+        &_M {
+            padding-top: 22.22vw;
+        }
+    }
+
+    &--pb {
+        // 20
+        &_XS {
+            padding-bottom: 5.56vw;
+        }
+
+        // 40 - 50
+        &_S {
+            padding-bottom: 11.11vw;
+        }
+        // 80 - 100
+
+        &_M {
+            padding-bottom: 22.22vw;
+        }
+    }
+}
+// End inner
+
+@include media-M {
+    .section {
+        &--pt {
+            // 20 - 50
+            &_XS {
+                padding-top: 3.12vw;
+            }
+    
+            // 40 - 50
+            &_S {
+                padding-top: 6.25vw;
+            }
+    
+            // 80 - 100
+            &_M {
+                padding-top: 12.5vw;
+            }
+        }
+    
+        &--pb {
+            // 20 - 50
+            &_XS {
+                padding-bottom: 3.12vw;
+            }
+            
+            // 40 - 50
+            &_S {
+                padding-bottom: 6.25vw;
+            }
+            // 80 - 100
+    
+            &_M {
+                padding-bottom: 12.5vw;
+            }
+        }
+    }
+    // End inner
+}
+// End M
+
+@include media-L {
+    .section {
+        &--pt {
+            // 20 - 50, 40-50
+            &_XS, &_S {
+                padding-top: 5.2vw;
+            }
+    
+            // 80 - 100
+            &_M {
+                padding-top: 10.4vw;
+            }
+        }
+    
+        &--pb {
+            // 20 - 50, 40-50
+            &_XS, &_S {
+                padding-bottom: 5.2vw;
+            }
+
+            // 80 - 100
+            &_M {
+                padding-bottom: 10.4vw;
+            }
+        }
+    }
+    // End inner
+}
+// End L
+
+@include media-XL {
+    .section {
+        &--pt {
+            // 20 - 50, 40 - 50
+            &_XS, &_S {
+                padding-top: 3.5vw;
+            }
+    
+            // 80 - 100
+            &_M {
+                padding-top: 6.9vw;
+            }
+        }
+    
+        &--pb {
+            // 20
+            &_XS, &_S {
+                padding-bottom: 3.5vw;
+            }
+
+            // 80 - 100
+            &_M {
+                padding-bottom: 6.9vw;
+            }
+        }
+    }
+    // End inner
+}
+// End XL
+
+@include media-XXL {
+    .section {
+        &--pt {
+            // 20
+            &_XS, &_S {
+                padding-top: 2.6vw;
+            }
+            // 80 - 100
+            &_M {
+                padding-top: 5.2vw;
+            }
+        }
+    
+        &--pb {
+            // 20
+            &_XS, &_S {
+                padding-bottom: 2.6vw;
+            }
+
+            // 80 - 100
+            &_M {
+                padding-bottom: 5.2vw;
+            }
+        }
+    }
+    // End inner
+}
+// End XXL

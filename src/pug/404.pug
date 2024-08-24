@@ -1,0 +1,16 @@
+extends template/main
+
+block variables
+	- var title = 'Сторінку не знайдено'
+
+block content
+	.not-found.section--pb_M 
+		.container.not-found__container 
+			h2.not-found__sign
+				.not-found__letter 4
+				.not-found__img 
+					picture 
+						img(src="/assets/images/404.png", alt="", loading="lazy")
+				.not-found__letter 4
+			h1.section-title.not-found__title Упс, щось пішло не так! Повертаємося до затишку
+			a(href=".").btn.btn--full_accent.not-found__link Головна 

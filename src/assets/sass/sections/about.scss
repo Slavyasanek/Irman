@@ -2,7 +2,6 @@
     font-size: 3.9vw;
     color: var(--color_black);
     line-height: 1.5;
-    padding-block: 11.11vw 5.56vw;
 
     &__container, &__small-img-txt, &__text-img {
         display: flex;
@@ -46,7 +45,6 @@
 @include media-M {
     .about {
         font-size: 2.2vw;
-        padding-block: 6.25vw 3.12vw;
 
         &__container, &__small-img-txt, &__text-img, &__main-block {
             gap: 2.5vw;
@@ -85,7 +83,6 @@
 @include media-L {
     .about {
         font-size: 1.46vw;
-        padding-block: 5.2vw;
         
         &__container {
             flex-direction: row;
@@ -144,7 +141,6 @@
 
 @include media-XL {
     .about {
-        padding-block: 3.47vw;
         font-size: .97vw;
 
         &__container {

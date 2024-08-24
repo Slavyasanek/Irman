@@ -1,7 +1,4 @@
 .checkout {
-    &__container {
-        padding-bottom: 22.22vw;
-    }
 
     &__title {
         font-size: 6.11vw;
@@ -16,10 +13,6 @@
 
 @include media-M {
     .checkout {
-        &__container {
-            padding-bottom: 12.5vw;
-        }
-
         &__title {
             margin-bottom: 3.75vw;
             font-size: 3.44vw;
@@ -44,7 +37,6 @@
         &__container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            padding-bottom: 10.4vw;
             gap:  0 2vw;
         }
 
@@ -67,7 +59,6 @@
         }
 
         &__container {
-            padding-bottom: 7vw;
             gap: 0 7.3vw;
             grid-template-columns: auto 36vw;
         }
@@ -86,7 +77,6 @@
         }
 
         &__container {
-            padding-bottom: 5.2vw;
             gap:  0 5.5vw;
         }
     }

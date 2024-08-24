@@ -1,6 +1,4 @@
 .text-content {
-    padding-bottom: 22.22vw;
-
     &__text {
         font-size: 3.9vw;
         line-height: 1.5;
@@ -75,7 +73,6 @@
 
 @include media-M {
     .text-content {
-        padding-bottom: 12.5vw;
 
         &__text {
             font-size: 2.2vw;
@@ -140,7 +137,6 @@
 
 @include media-L {
     .text-content {
-        padding-bottom: 10.4vw;
 
         &__text {
             max-width: 67.9vw;
@@ -206,7 +202,6 @@
 
 @include media-XL {
     .text-content {
-        padding-bottom: 7vw;
 
         &__text {
             font-size: .97vw;
