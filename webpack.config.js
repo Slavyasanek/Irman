@@ -55,6 +55,12 @@ const plugins = () => {
             chunks: ['home'],
             minify: false
           }),
+          new HtmlWebpackPlugin({
+            template: './src/pug/faq.pug',
+            filename: 'faq.html',
+            chunks: ['home'],
+            minify: false
+          }),
           new MiniCssExtractPlugin({
             filename: './assets/css/' + filename('css')
           }),

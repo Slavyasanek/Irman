@@ -1,0 +1,26 @@
+extends template/main
+
+block variables
+	- var title = 'Питання'
+
+block content
+	.breadcrumbs.container 
+		.breadcrumbs__list 
+			li.breadcrumbs__item.breadcrumbs__item--link
+				a(href="/")  Головна
+			li.breadcrumbs__item FAQ 
+	//- breadcrumbs
+	.faq 
+		.container.faq__container 
+			.faq__list 
+				- for (var i = 0; i < 10; i++)
+					.faq-item.faq__item
+						.faq-item__heading 
+							.faq-item__quest Як зробити замовлення?
+							button.btn.btn--icon.faq-item__btn
+								+icon('arrow-down')
+						.faq-item__content 
+							.faq-item__answer 
+								p Виберіть товар, додайте його до кошика, перейдіть до оформлення замовлення, заповніть необхідні дані та підтвердьте покупку
+						//- faq-item__heading 
+					//- faq-item

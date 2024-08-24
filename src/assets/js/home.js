@@ -229,3 +229,11 @@ class CustomSelect {
 
 Array.from(document.querySelectorAll('.custom-field--type_select')).forEach(sel => new CustomSelect(sel));
 
+if (document.querySelector('.faq')) {
+    document.querySelector('.faq').addEventListener("click", e => {
+        if (document.querySelector('.faq-item.active')) document.querySelector('.faq-item.active').classList.remove('active');
+        if (e.target.closest('.faq-item')) {
+            e.target.closest('.faq-item').classList.toggle('active')
+        }
+    })
+}

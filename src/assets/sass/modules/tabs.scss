@@ -7,6 +7,8 @@
         font-size: 5.56vw;
         line-height: 1.2;
         transition: var(--transition);
+        color: var(--color_black);
+        
         &:hover {
             color: var(--color_accent);
         }
