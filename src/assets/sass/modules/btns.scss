@@ -64,6 +64,13 @@
                 left: -200%;
             }
         }
+
+        &:disabled, &.disabled {
+            background-color: transparent;
+            border: .1rem solid var(--color_grey);
+            color: var(--color_grey);
+            pointer-events: none;
+        }
     }
 }
 // End FULL
@@ -124,8 +131,23 @@
             background-color: var(--color_accent);
             transition: all 0.475s ease-in-out;
             height: 100%;
-          }
-          
+        }
+        
+        &:disabled, &.disabled {
+            border-color: var(--color_grey);
+            background-color: var(--color_grey);
+            color: #9E9E9E;
+            pointer-events: none;
+            
+            .btn__content {
+                color: #9E9E9E;
+            }
+
+            svg {
+                fill: #9E9E9E;
+                stroke: #9E9E9E;
+            }
+        }
     }
 }
 // End BORDER

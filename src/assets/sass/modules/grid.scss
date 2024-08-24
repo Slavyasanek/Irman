@@ -53,11 +53,11 @@
 }
 // End XL
 
-@include media-XXL {
-    .grid--gap {
-        &_16-24 {
-            grid-gap: 1.25vw;
-        }
-    }
-}
-// End XXL
+// @include media-XXL {
+//     .grid--gap {
+//         &_16-24 {
+//             grid-gap: 1.25vw;
+//         }
+//     }
+// }
+// // End XXL

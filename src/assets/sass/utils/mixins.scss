@@ -146,7 +146,7 @@ $z-indexes: (
 }
 
 @mixin media-XL() {
-  @media screen and (min-width: 1400px) {@content};
+  @media screen and (min-width: 1440px) {@content};
 }
 
 @mixin media-XXL() {

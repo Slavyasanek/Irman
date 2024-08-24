@@ -96,6 +96,14 @@
             }
         }
     }
+
+    &:hover {
+        .custom-field {
+            &__input-wr {
+                border-color: #8F8F8F;
+            }
+        }
+    }
 }
 // End inner
 
@@ -107,6 +115,20 @@
 
         &__input-wr {
             border-color: #D64D4D;
+        }
+    }
+}
+
+.custom-field.disabled {
+    .custom-field {
+        &__input-wr {
+            pointer-events: none;
+            background-color: #DBDBDB;
+            border-color: #DBDBDB;
+        }
+
+        &__selected {
+            color: #CBCBCB;
         }
     }
 }

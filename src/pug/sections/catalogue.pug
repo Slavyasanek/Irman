@@ -10,8 +10,14 @@ section.catalogue.section--pt_S.section--pb_S
         //- tabs 
     .container 
         .grid.grid--col_2-4.grid--gap_16-24.catalogue__products 
-            - for (var i = 0; i < 8; i++)
-                +product-card()
+            +product-card('/assets/images/products/'+1+'.jpg', "Глиняна ваза. Колекція “Etna”")
+            +product-card('/assets/images/products/'+2+'.jpg', "Глиняна ваза. Колекція “Etna” Глиняна ваза. Колекція “Etna”")
+            +product-card('/assets/images/products/'+3+'.jpg', "Глиняна ваза. Колекція “Etna”")
+            +product-card('/assets/images/products/'+4+'.jpg', "Глиняна ваза. Колекція “Etna” Глиняна ваза. Колекція “Etna”")
+            +product-card('/assets/images/products/'+5+'.jpg', "Глиняна ваза. Колекція “Etna” Глиняна ваза. Колекція “Etna”")
+            +product-card('/assets/images/products/'+6+'.jpg', "Килим")
+            +product-card('/assets/images/products/'+7+'.jpg', "Картина")
+            +product-card('/assets/images/products/'+8+'.jpg', "Глиняна ваза. Колекція “Etna”")
         //- grid
         a(href="shop.html").btn.btn-def-link.btn-def-link__black.catalogue__load-more Показати більше
     //- container
