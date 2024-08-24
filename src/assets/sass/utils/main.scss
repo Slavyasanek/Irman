@@ -17,6 +17,11 @@ html {
 body {
     background-color: var(--color_white);
     color: var(--color_black);
+
+    &.lock {
+        overflow: hidden;
+        max-height: 100vh;
+    }
 }
 
 main {

@@ -17,6 +17,9 @@
         width: 18.9vw;
         height: 8.9vw;
         flex-shrink: 0;
+        position: relative;
+        z-index: 3;
+
         img {
             @include contain-image;
         }
@@ -33,6 +36,14 @@
             @include square(100%);
         }
     }
+
+    &.menu-open {
+        .header {
+            &__logo {
+                transform: translateY(320%);
+            }
+        }
+    }
 }
 // End inner
 
@@ -47,6 +58,14 @@
     
         &__cart-btn {
             @include square(5vw);
+        }
+
+        &.menu-open {
+            .header {
+                &__logo {
+                    transform: translateY(180%);
+                }
+            }
         }
     }
     // End inner    
@@ -99,6 +118,14 @@
     
         &__cart-btn {
             @include square(3.33vw);
+        }
+
+        &.menu-open {
+            .header {
+                &__logo {
+                    transform: translateY(0%);
+                }
+            }
         }
     }
     // End inner    

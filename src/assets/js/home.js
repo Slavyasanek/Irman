@@ -6,6 +6,66 @@ import '@styles/index.scss';
 import Swiper from 'swiper';
 import { Pagination, Thumbs } from 'swiper/modules';
 
+const disableScroll = () => document.body.classList.add('lock');
+
+const enableScroll = () => document.body.classList.remove('lock');
+
+/**
+ *
+ *
+ * @class MobileMenu
+ */
+class MobileMenu {
+/**
+ * Creates an instance of MobileMenu.
+ * @param {string} mobMenuClass
+ * @param {string} activeClass
+ * @param {string} openButtonClass
+ * @param {string} closeButtonClass
+ * @memberof MobileMenu
+ */
+constructor(mobMenuClass, activeClass, openButtonClass, closeButtonClass) {
+        this.mobMenuClass = mobMenuClass;
+        this.mobMenu = document.querySelector(mobMenuClass);
+        this.activeClass = activeClass;
+        this.openButtonClass = openButtonClass;
+        this.openButton = document.querySelector(openButtonClass);
+        this.closeButton = document.querySelector(closeButtonClass);
+
+        this.init();
+    }
+    
+
+    closeOnBackdropClick = e => {
+        if (e.target !== this.mobMenu && !e.target.closest(`${this.mobMenuClass}.${this.activeClass}`) && !e.target.closest(this.openButtonClass)) this.closeMenu();
+    }
+
+    openMenu = () => {
+        this.mobMenu.classList.add(this.activeClass);
+        disableScroll();
+        document.addEventListener("click", this.closeOnBackdropClick);
+
+        // odd code
+        document.querySelector('.header').classList.add('menu-open');
+    }
+
+    closeMenu = () => {
+        this.mobMenu.classList.remove(this.activeClass);
+        enableScroll();
+        document.removeEventListener("click", this.closeOnBackdropClick);
+
+        // odd code
+        document.querySelector('.header').classList.remove('menu-open');
+    }
+
+    init = () => {
+        this.openButton.addEventListener("click", this.openMenu);
+        this.closeButton.addEventListener("click", this.closeMenu);   
+    }
+}
+
+new MobileMenu('.mob-menu', 'open', '.header__hamburger', '.mob-menu__close-btn')
+
 /**
  *
  *
@@ -141,10 +201,12 @@ class Cart {
 
     openCart = () => {
         this.cart.classList.add('active');
+        disableScroll();
     }
 
     closeCart = () => {
         this.cart.classList.remove('active');
+        enableScroll();
     }
 
     init = () => {

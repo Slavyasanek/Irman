@@ -1,7 +1,7 @@
 .hamburger {
     position: relative;
     @include square(8.9vw);
-    z-index: 4;
+    z-index: 1;
     transition: var(--transition);
     padding: 1.9vw 1.4vw;
 

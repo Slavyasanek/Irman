@@ -26,3 +26,20 @@ header.header
     //- header__container 
 //- header
 
+.mob-menu.header__mob-menu
+    button.btn.btn--icon.mob-menu__close-btn
+        +icon('close')
+    .mob-menu__menu 
+        ul 
+            li 
+                a(href="about.html") Про нас
+            li 
+                a(href="shop.html") Каталог
+    //- mob-menu__menu 
+    .mob-menu__icons 
+        a.btn.btn--icon.footer__social.social-icon.social-icon--fill(href="http://", target="_blank", rel="noopener noreferrer") 
+            +icon-class('instagram', '')
+        a.btn.btn--icon.footer__social.social-icon.social-icon--stroke(href="http://", target="_blank", rel="noopener noreferrer") 
+            +icon-class('telegram', '')
+    //- mob-menu__icons 
+//- mob-menu
