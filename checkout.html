@@ -27,13 +27,13 @@
               <li> <a href="shop.html">Каталог</a></li>
             </ul>
           </div>
-        </div><a class="header__logo" href="/">
+        </div><a class="header__logo" href=".">
           <picture> <img src="./assets/images/logo.png" alt=""></picture></a>
         <div class="header__right-side">
           <button class="btn btn--border_accent header__order-btn"> 
             <div class="btn__content">Індивідуальне замовлення</div>
           </button>
-          <button class="btn btn--icon header__cart-btn"> 
+          <button class="btn btn--icon header__cart-btn cart-btn" data-cart="1">
             <svg>
               <use href="./assets/svg/sprite.svg#basket"></use>
             </svg>
@@ -41,6 +41,26 @@
         </div>
       </div>
     </header>
+    <div class="mob-menu header__mob-menu">
+      <button class="btn btn--icon close-btn mob-menu__close-btn">
+        <svg>
+          <use href="./assets/svg/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="mob-menu__menu"> 
+        <ul> 
+          <li> <a href="about.html">Про нас</a></li>
+          <li> <a href="shop.html">Каталог</a></li>
+        </ul>
+      </div>
+      <div class="mob-menu__icons"> <a class="btn btn--icon footer__social social-icon social-icon--fill" href="http://" target="_blank" rel="noopener noreferrer"> 
+          <svg>
+            <use href="./assets/svg/sprite.svg#instagram"></use>
+          </svg></a><a class="btn btn--icon footer__social social-icon social-icon--stroke" href="http://" target="_blank" rel="noopener noreferrer"> 
+          <svg>
+            <use href="./assets/svg/sprite.svg#telegram"></use>
+          </svg></a></div>
+    </div>
     <main>
       <div class="breadcrumbs container"> 
         <div class="breadcrumbs__list"> 
@@ -48,7 +68,7 @@
           <li class="breadcrumbs__item">Оформлення замовлення</li>
         </div>
       </div>
-      <secction class="checkout"> 
+      <section class="checkout section--pb_M"> 
         <div class="container checkout__container">
           <h2 class="section-title checkout__title">Оформлення замовлення</h2>
           <div class="checkout-summary checkout__summary"> <a class="btn btn--icon checkout-summary__cart-link" href="/cart.html">
@@ -56,10 +76,8 @@
                 <use href="./assets/svg/sprite.svg#edit"></use>
               </svg></a>
             <div class="checkout-summary__items"> 
-              <div class="cart-item checkout-summary__item">
-                <div class="cart-item__img"> 
-                  <picture> <img src="./assets/images/cart1.jpg" alt="item" loading="lazy"></picture>
-                </div>
+              <div class="cart-item checkout-summary__item"><a class="cart-item__img" href="product.html"> 
+                  <picture> <img src="./assets/images/cart1.jpg" alt="item" loading="lazy"></picture></a>
                 <div class="cart-item__content"> 
                   <div class="cart-item__row cart-item__row--dir_column"> 
                     <p class="cart-item__title">Ексклюзивна Керамічна Ваза Ручної Роботи</p>
@@ -88,7 +106,7 @@
           <form class="checkout__form checkout-form" action="/" autocomplete="off">
             <div class="checkout-group checkout-form__group"> 
               <div class="checkout-group__wrapper"> 
-                <div class="custom-field custom-field--type_input checkout-group__input"> 
+                <div class="custom-field custom-field--type_input checkout-group__input">
                   <label class="custom-field__label" for="name">Ім‘я*</label>
                   <div class="custom-field__input-wr">
                     <input class="custom-field__selected" type="text" name="name" id="name" placeholder="Введіть своє ім’я" required>
@@ -199,6 +217,12 @@
                       <ul class="custom-field__list"> 
                         <li class="custom-field__item">При отриманні</li>
                         <li class="custom-field__item">При отриманні</li>
+                        <li class="custom-field__item">При отриманні</li>
+                        <li class="custom-field__item">При отриманні</li>
+                        <li class="custom-field__item">При отриманні</li>
+                        <li class="custom-field__item">При отриманні</li>
+                        <li class="custom-field__item">При отриманні</li>
+                        <li class="custom-field__item">При отриманні</li>
                       </ul>
                     </div>
                   </div>
@@ -209,29 +233,29 @@
             <button class="btn btn--full_accent checkout-form__btn" type="submit">Оформити замовлення</button>
           </form>
         </div>
-      </secction>
+      </section>
     </main>
-    <footer class="footer"> 
+    <footer class="footer text text--size_14"> 
       <div class="container footer__container"> 
         <div class="footer__block"> 
           <p class="footer__subtitle">Допомога покупцеві</p>
           <div class="footer__menu"> 
             <ul> 
-              <li><a href="/">Умови доставки</a></li>
-              <li><a href="/">Про компанію</a></li>
-              <li><a href="/">Каталог товарів</a></li>
-              <li><a href="/">FAQ</a></li>
+              <li><a href="delivery.html">Умови доставки</a></li>
+              <li><a href="about.html">Про компанію</a></li>
+              <li><a href="shop.html">Каталог товарів</a></li>
+              <li><a href="faq.html">FAQ</a></li>
             </ul>
           </div>
         </div>
         <div class="footer__block">
           <p class="footer__subtitle">Контакти</p>
           <p class="footer__time">9:00-19:00 Пн-Нд</p><a class="footer__tel" href="tel:0942578644">0942578644</a>
-          <div class="footer__socials"> <a class="btn btn--icon footer__social" href="http://" target="_blank" rel="noopener noreferrer"> 
-              <svg class="social-icon social-icon--fill">
+          <div class="footer__socials"> <a class="btn btn--icon footer__social social-icon social-icon--fill" href="http://" target="_blank" rel="noopener noreferrer"> 
+              <svg>
                 <use href="./assets/svg/sprite.svg#instagram"></use>
-              </svg></a><a class="btn btn--icon footer__social" href="http://" target="_blank" rel="noopener noreferrer"> 
-              <svg class="social-icon social-icon--stroke">
+              </svg></a><a class="btn btn--icon footer__social social-icon social-icon--stroke" href="http://" target="_blank" rel="noopener noreferrer"> 
+              <svg>
                 <use href="./assets/svg/sprite.svg#telegram"></use>
               </svg></a></div>
         </div>
@@ -243,7 +267,7 @@
     <div class="backdrop backdrop--cart">
       <div class="backdrop__inner cart"> 
         <div class="cart-heading cart__heading"> 
-          <button class="btn btn--icon cart-heading__close-btn">
+          <button class="btn btn--icon close-btn cart-heading__close-btn">
             <svg>
               <use href="./assets/svg/sprite.svg#close"></use>
             </svg>
@@ -252,10 +276,8 @@
         </div>
         <div class="cart-items">
           <div class="cart-items__list">
-            <div class="cart-item cart-items__item">
-              <div class="cart-item__img"> 
-                <picture> <img src="./assets/images/cart1.jpg" alt="item" loading="lazy"></picture>
-              </div>
+            <div class="cart-item cart-items__item"><a class="cart-item__img" href="product.html"> 
+                <picture> <img src="./assets/images/cart1.jpg" alt="item" loading="lazy"></picture></a>
               <div class="cart-item__content"> 
                 <div class="cart-item__row cart-item__row--dir_column"> 
                   <p class="cart-item__title">Ексклюзивна Керамічна Ваза Ручної Роботи</p>
@@ -269,10 +291,8 @@
                 <button class="btn btn-def-link btn-def-link__black cart-item__delete-btn">Видалити</button>
               </div>
             </div>
-            <div class="cart-item cart-items__item">
-              <div class="cart-item__img"> 
-                <picture> <img src="./assets/images/cart2.jpg" alt="item" loading="lazy"></picture>
-              </div>
+            <div class="cart-item cart-items__item"><a class="cart-item__img" href="product.html"> 
+                <picture> <img src="./assets/images/cart2.jpg" alt="item" loading="lazy"></picture></a>
               <div class="cart-item__content"> 
                 <div class="cart-item__row cart-item__row--dir_column"> 
                   <p class="cart-item__title">Ексклюзивна Керамічна Ваза Ручної Роботи</p>
@@ -286,10 +306,8 @@
                 <button class="btn btn-def-link btn-def-link__black cart-item__delete-btn">Видалити</button>
               </div>
             </div>
-            <div class="cart-item cart-items__item">
-              <div class="cart-item__img"> 
-                <picture> <img src="./assets/images/cart1.jpg" alt="item" loading="lazy"></picture>
-              </div>
+            <div class="cart-item cart-items__item"><a class="cart-item__img" href="product.html"> 
+                <picture> <img src="./assets/images/cart1.jpg" alt="item" loading="lazy"></picture></a>
               <div class="cart-item__content"> 
                 <div class="cart-item__row cart-item__row--dir_column"> 
                   <p class="cart-item__title">Ексклюзивна Керамічна Ваза Ручної Роботи</p>
@@ -303,10 +321,8 @@
                 <button class="btn btn-def-link btn-def-link__black cart-item__delete-btn">Видалити</button>
               </div>
             </div>
-            <div class="cart-item cart-items__item">
-              <div class="cart-item__img"> 
-                <picture> <img src="./assets/images/cart2.jpg" alt="item" loading="lazy"></picture>
-              </div>
+            <div class="cart-item cart-items__item"><a class="cart-item__img" href="product.html"> 
+                <picture> <img src="./assets/images/cart2.jpg" alt="item" loading="lazy"></picture></a>
               <div class="cart-item__content"> 
                 <div class="cart-item__row cart-item__row--dir_column"> 
                   <p class="cart-item__title">Ексклюзивна Керамічна Ваза Ручної Роботи</p>
@@ -330,6 +346,29 @@
           <div class="cart-footer__btns cart-footer__btns--dir_col"><a class="btn btn--border_accent cart-footer__continue-btn" href="shop.html">      
               <div class="btn__content">Продовжити покупки</div></a><a class="btn btn--full_accent cart-footer__checkout-btn" href="checkout.html">Оформити замовлення</a></div>
         </div>
+      </div>
+    </div>
+    <div class="backdrop backdrop--modal">
+      <div class="modal backdrop__inner">
+        <button class="btn btn--icon close-btn modal__close-btn">
+          <svg>
+            <use href="./assets/svg/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Індивідуальне замовлення</h2>
+        <h5 class="modal__subtitle">Ми створюємо унікальні вироби на замовлення, враховуючи Ваші побажання</h5>
+        <p class="text text--size_14 modal__txt">Зв’яжіться з нами для обговорення деталей через месенджер або інстаграм</p>
+        <div class="modal__btns"> <a class="btn btn--icon btn--border_accent modal__btn" href="http://" target="_blank" rel="noopener noreferrer">
+            <div class="btn__content social-icon--stroke">
+              <svg>
+                <use href="./assets/svg/sprite.svg#telegram"></use>
+              </svg>Написати
+            </div></a><a class="btn btn--icon btn--border_accent modal__btn" href="http://" target="_blank" rel="noopener noreferrer">
+            <div class="btn__content social-icon--fill"> 
+              <svg>
+                <use href="./assets/svg/sprite.svg#instagram"></use>
+              </svg>Написати
+            </div></a></div>
       </div>
     </div>
   </body>
