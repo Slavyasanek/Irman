@@ -41,6 +41,7 @@
     "webpack-livereload-plugin": "^3.0.2"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "normalize.css": "^8.0.1",
     "svgo-loader": "^4.0.0",
     "swiper": "^11.1.9"

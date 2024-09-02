@@ -5,6 +5,7 @@ import 'swiper/css/thumbs';
 import '@styles/index.scss';
 import Swiper from 'swiper';
 import { Pagination, Thumbs } from 'swiper/modules';
+import gsap from 'gsap';
 
 const disableScroll = () => document.body.classList.add('lock');
 
@@ -308,5 +309,72 @@ if (document.querySelector('.faq')) {
         if (e.target.closest('.faq-item')) {
             e.target.closest('.faq-item').classList.toggle('active')
         }
+    })
+}
+
+if (document.querySelector('.hero')) {
+    const heroRefs = {
+        contentBlock: '.hero__content-block',
+        img: '.hero__img',
+        grid: '.hero__grid',
+        title: '.hero__title p',
+        subtitle: '.hero__subtitle p',
+        button: '.hero__link',
+    }
+    
+    let mm = gsap.matchMedia();
+
+    mm.add('(min-width: 960px)', () => {
+        gsap.set([heroRefs.title, heroRefs.subtitle], {
+            yPercent: -110,
+        })
+    
+        gsap.set(heroRefs.button, {
+            autoAlpha: 0,
+        })
+    
+        gsap.set(heroRefs.grid, {
+            xPercent: -52,
+        })
+    
+        // --- LEFT SIDE
+        gsap.set(`${heroRefs.img}:nth-child(2)`, {
+            xPercent: -154,
+        })
+        gsap.set(`${heroRefs.img}:nth-child(4)`, {
+            xPercent: -154,
+        })
+        gsap.set(`${heroRefs.img}:nth-child(7)`, {
+            xPercent: -54
+        })
+    
+        // -- RIGHT SIDE
+        gsap.set(`${heroRefs.img}:nth-child(6)`, {
+            xPercent: 146
+        })
+    
+        gsap.set(`${heroRefs.img}:last-child`, {
+            xPercent: 100
+        })
+
+        // ANIMATION
+    
+        const heroTl = gsap.timeline({
+            delay: 0.8
+        });
+    
+        heroTl.to(heroRefs.img, {
+            xPercent: 0,
+            duration: 1.2,
+        }).to(heroRefs.grid, {
+            xPercent: 0,
+            duration: 1.2
+        }, "<").to([heroRefs.title, heroRefs.subtitle, heroRefs.button], {
+            yPercent: 0,
+            duration: .7,
+        }).to(heroRefs.button, {
+            autoAlpha: 1,
+            duration: .5
+        })
     })
 }
